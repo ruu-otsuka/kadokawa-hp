@@ -1,0 +1,240 @@
+/* bootstarap */
+.btn-primary {
+    --bs-btn-bg: #F38304 !important;
+    --bs-btn-border-color: #F38304 !important;
+}
+
+/* 全体のスタイル */
+body {
+    padding-top: 56px; /* 固定ナビゲーションバーの高さ分 */
+    font-family: 'Noto Sans JP', 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* ヒーローセクション */
+  .hero-section {
+    height: 100vh;
+    min-height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://i0.wp.com/www.egao.co.jp/wp-content/uploads/2023/03/8ef682c1f9c67e4dfbabb40b7fc84e8d.jpg?fit=728%2C485&ssl=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+  }
+  
+  .hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-section .lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* ページヘッダー（会社概要ページ用） */
+  .page-header {
+    background-color: #f8f9fa;
+    padding: 80px 0 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .page-header h1 {
+    font-weight: 700;
+    color: #333;
+  }
+  
+  /* セクションのスタイル */
+  section {
+    padding: 60px 0;
+  }
+  
+  h2 {
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    /* background-color: #007bff; */
+    background-color: #F38304;
+  }
+  
+  .text-center h2:after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* カードのスタイル */
+  .card {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* SNS埋め込みのスタイル */
+  .twitter-embed, .facebook-embed {
+    min-height: 400px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  
+  /* お問い合わせ情報のスタイル */
+  .contact-info {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    height: 100%;
+  }
+  
+  .social-links a {
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    /* color: #007bff; */
+    color: #F38304;
+  }
+  
+  /* 沿革のタイムラインスタイル */
+  .timeline {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .timeline:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    /* background-color: #007bff; */
+    background-color: #F38304;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .timeline-date {
+    font-weight: bold;
+    margin-bottom: 5px;
+    /* color: #007bff; */
+    color: #F38304;
+  }
+  
+  .timeline-content {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -36px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    /* background-color: #007bff; */
+    background-color: #F38304;
+    border: 2px solid white;
+  }
+  
+  /* プロフィールセクションのスタイル */
+  .profile-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    max-width: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .profile-content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .profile-content h3 {
+    /* color: #007bff; */
+    color: #F38304;
+    /* border-bottom: 2px solid #007bff; */
+    border-bottom: 2px solid #F38304;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-content .lead {
+    font-weight: 500;
+  }
+  
+  .profile-content .quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    /* color: #007bff; */
+    color: #F38304;
+    /* border-left: 3px solid #007bff; */
+    border-left: 3px solid #F38304;
+    padding-left: 15px;
+    margin: 20px 0;
+  }
+  
+  .profile-achievements {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .profile-achievements li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #dee2e6;
+  }
+  
+  .profile-achievements li:last-child {
+    border-bottom: none;
+  }
+  
+  /* レスポンシブ対応 */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2.5rem;
+    }
+    
+    .hero-section .lead {
+      font-size: 1.2rem;
+    }
+    
+    .timeline {
+      padding-left: 20px;
+    }
+    
+    .timeline-item:before {
+      left: -26px;
+    }
+  }
