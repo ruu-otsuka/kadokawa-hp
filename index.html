@@ -9,11 +9,24 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 </head>
 <body>
+  <style>
+    body {
+        font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+        background-color: white;
+        overflow-y: scroll;
+        width: 100%;
+        color: rgb(68, 68, 68);
+        margin: 0px;
+    }
+  </style>
   <!-- ナビゲーションバー -->
-  <nav class="navbar navbar-expand-lg navbar-light text-light fixed-top" style="background-color: #B8D31A;">
+  <nav class="navbar navbar-expand-lg navbar-light text-light fixed-top" style="background-color: #FFF1DE;">
     <div class="container">
       <a class="navbar-brand" href="index.html">株式会社 笑顔アメニティ研究所</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +41,7 @@
             <a class="nav-link" href="about.html">会社概要</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#contact">お問い合わせ</a>
+            <!-- <a class="nav-link" href="index.html#contact">お問い合わせ</a> -->
           </li>
         </ul>
       </div>
@@ -39,11 +52,13 @@
   <header class="hero-section">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
-        <div class="col-12 text-center">
+        <div class="col-12">
           <h1>株式会社 笑顔アメニティ研究所</h1>
-          <p class="lead">儲かるから笑顔になる？</br>
-            いいえ、笑顔だから儲かるんです！</p>
-          <a href="#contact" class="btn btn-primary btn-lg">お問い合わせ</a>
+          <p class="lead">儲かるから笑顔になる？</br>いいえ、笑顔だから儲かるんです！</p>
+            <!-- <a href="#contact" class="btn btn-primary btn-lg">お問い合わせ</a> -->
+            <div class="page1-3">
+              <a href="#contact" class="btn btn-c"><span>お問い合わせはこちら</span></a>
+            </div>
         </div>
       </div>
     </div>
@@ -149,36 +164,200 @@
   </div>
 </section>
 
+<style>
+  /* カスタムスタイル */
+  body { font-family: 'Noto Sans JP', sans-serif; }
+  .hero {
+    background: url('https://example.com/hero.jpg') center/cover no-repeat;
+    color: #fff;
+    height: 80vh;
+    position: relative;
+  }
+  .hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    top: 50%; transform: translateY(-50%);
+  }
+  .feature-icon { font-size: 2rem; }
+  footer { background: #f8f9fa; padding: 2rem 0; }
 
+  /* 虹色ボタン */
+  div.page1-3 {
+    font-size: 17px;
+    position: relative;
+    margin-top: 30px;
+    color: #fff;
+    border-radius: 70px;
+    background: linear-gradient(to left, #9a2f8d 0%, #c02853 30%, #d63b27 65%, #de6733 75%, #e17e3b 80%, #ecbb4c 100%);
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    width: 354.188px;
+    height: 80px;
+    margin-top: 30px;
+  }
+  a.btn-c {
+      font-size: 17px;
+      position: relative;
+      padding: 1.65rem 5.1rem 1.65rem 5.1rem;
+      color: #fff;
+  }
+  /* <div class="page1-3">
+    <a href="index.html#period-3" class="btn btn-c"><span>お問い合わせはこちら</span></a>
+    </div> */
+  /*  */
+
+</style>
+
+
+<!-- 紹介セクション -->
+<section class="py-5">
+  <div class="container p-5" style="background-color: #C6B78D;">
+    <h1 class="mb-4 text-center" style="font-weight: 900; color: white;">私たちの想い</h1>
+    <p class="fs-5 text-center" style="font-weight: 200; color: white;">人は幸せになるために生まれてきた。誰でも笑顔になるだけで、簡単に幸せになれます。笑顔は、幸せのバロメーターです。</p>
+    <p class="fs-5 text-center" style="font-weight: 200; color: white;">笑いは本能、笑顔は技術。自然な笑顔はコミュニケーションの技術から生まれます。誰でも訓練すれば容易に作れます。</p>
+    <div class="page1-3" style="margin: auto;">
+      <a href="index.html#period-3" class="btn btn-c"><span>お問い合わせはこちら</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 効果セクション -->
+<section class="py-5" style="background-color: white;">
+  <div class="container">
+    <h2 class="mb-4 text-center">笑顔のチカラ</h2>
+    <div class="row g-4">
+      <!-- カード1 -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-4" style="background-color: #F9F9FD; border: none;">
+          <div class="card-body">
+            <div class="feature-icon mb-3">
+              <i class="fa-solid fa-face-smile fa-2x" style="color: #C6B78D;"></i>
+            </div>
+            <h5 class="card-title">人間関係の向上</h5>
+            <p class="card-text">友達や親子関係がうまく行くようになります。</p>
+          </div>
+        </div>
+      </div>
+      <!-- カード2 -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-4" style="background-color: #F9F9FD; border: none;">
+          <div class="card-body">
+            <div class="feature-icon mb-3">
+              <i class="fa-solid fa-chart-line fa-2x" style="color: #C6B78D;"></i>
+            </div>
+            <h5 class="card-title">営業成績アップ</h5>
+            <p class="card-text">笑顔で信頼を築き、成果を最大化。</p>
+          </div>
+        </div>
+      </div>
+      <!-- カード3 -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-4" style="background-color: #F9F9FD; border: none;">
+          <div class="card-body">
+            <div class="feature-icon mb-3">
+              <i class="fa-solid fa-heart fa-2x" style="color: #C6B78D;"></i>
+            </div>
+            <h5 class="card-title">心身の健康</h5>
+            <p class="card-text">ストレス軽減と前向きな人生をサポート。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- プログラムセクション -->
+<section id="program" class="py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center">プログラム（案）</h2>
+    <ul class="list-group">
+      <li class="list-group-item">割り箸と手鏡をご持参ください。</li>
+      <li class="list-group-item">笑顔の基礎理論講座</li>
+      <li class="list-group-item">実践ワークショップ</li>
+      <li class="list-group-item">コミュニケーション強化セッション</li>
+      <li class="list-group-item">振り返り＆フィードバック</li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- たくさんの企業に評価されています -->
+    <section id="blog" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">400社を超える企業に愛されてきました</h2>
+        <div class="album py-5 bg-body-tertiary">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="nihon.jpg" alt="">
+            <div class="card-body">
+              <p class="card-text">笑顔事業が評価され皇族より社会文化功労賞を頂きました。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="rumine.jpg" alt="">
+            <div class="card-body">
+              <p class="card-text">笑顔事業が評価され株式会社ルミネより功労賞を頂きました。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="kansya.jpg" alt="">
+            <div class="card-body">
+              <p class="card-text">私の行動が評価され警視庁より感謝状を頂きました。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- SNS埋め込みセクション -->
   <section id="blog" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center mb-5">最新情報</h2>
+      <h2 class="text-center mb-5">笑顔塾をもっと知る！</h2>
       <div class="row">
+
+        <!-- Twitter埋め込み -->
         <div class="col-md-6 mb-4">
           <div class="card h-100">
             <div class="card-header">
               <h5><i class="bi bi-twitter text-info"></i> Twitter</h5>
             </div>
             <div class="card-body">
-              <!-- Twitter埋め込み -->
-              <div class="twitter-embadd">
-                <a href="https://twitter.com/intent/tweet?button_hashtag=isMayaSleeping&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-lang="ja" data-show-count="false">Tweet #isMayaSleeping</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>              </div>
-             </div>
+              <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">【ハッピー笑顔塾】日本人の笑いのルーツ（神々と笑い）①<br>僕が笑顔を指導する上で一番苦労するのは、日本には笑いと笑顔の違いがないこと。そのルーツを探り・・<br><br>【笑顔の法則】　日本の古代神道　笑えばすべてが救われる<a href="https://t.co/9RbkQSWz2Q">https://t.co/9RbkQSWz2Q</a>【ハッピー笑顔塾】%E3%80%80笑いのルーツ <a href="https://t.co/wa4OscLVny">pic.twitter.com/wa4OscLVny</a></p>&mdash; 門川義彦（笑顔ｱﾒﾆﾃｨ研究所） (@kadokawa2525) <a href="https://twitter.com/kadokawa2525/status/1902168158875832766?ref_src=twsrc%5Etfw">March 19, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
           </div>
         </div>
-        
+        <!-- facebook -->
         <div class="col-md-6 mb-4">
           <div class="card h-100">
             <div class="card-header">
-              <h5><i class="bi bi-facebook text-primary"></i> Facebook</h5>
+              <h5><i class="bi bi-facebook text-info"></i> Facebook</h5>
             </div>
             <div class="card-body">
-              <!-- Facebook埋め込み -->
-              <div class="facebook-embed">
-                <!-- 提供されたFacebook投稿の埋め込みコード -->
-                <div class="fb-post" data-href="https://www.facebook.com/photo.php?fbid=1472563850801548&set=a.769517887772818&type=3&ref=embed_page" data-width="500"></div>
+              <div class="card h-100">
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous"
+                  src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v18.0" nonce="ABC123">
+                </script>
+                <div class="fb-post"
+                  data-href="https://www.facebook.com/permalink.php?story_fbid=1472553454135921&id=100041438419301"
+                  data-width="500"
+                  data-show-text="true">
+                </div>
               </div>
             </div>
           </div>
@@ -188,35 +367,93 @@
   </section>
 
   <!-- お問い合わせセクション -->
+  <style>
+    #contact {
+      background-color: #FFFFFF;
+    }
+  </style>
   <section id="contact" class="py-5">
     <div class="container">
       <h2 class="text-center mb-5">お問い合わせ</h2>
       <div class="row">
         <!-- フォーム -->
-        <div class="col-lg-6 mb-4">
+        <!-- <div class="col-lg-6 mb-4"> -->
+        <div class="">
           <form>
+            <!-- 会社名 -->
             <div class="mb-3">
+              <label data-v-890cce46="" style="color: rgb(0, 0, 0); font-weight: 700; font-size: 16px;">
+                会社名
+                <span data-v-890cce46="" class="tag" style="color: rgb(255, 255, 255); background-color: rgb(198, 183, 141); font-size: 12px;">必須</span></label>
+              </label>
               <input type="text" class="form-control" placeholder="会社名" required>
             </div>
+
+            <!-- 氏名 -->
             <div class="mb-3">
+              <label data-v-890cce46="" style="color: rgb(0, 0, 0); font-weight: 700; font-size: 16px;">
+                氏名
+                <span data-v-890cce46="" class="tag" style="color: rgb(255, 255, 255); background-color: rgb(198, 183, 141); font-size: 12px;">必須</span></label>
+              </label>
               <input type="text" class="form-control" placeholder="氏名" required>
             </div>
+
+            <!-- 氏名(カナ) -->
             <div class="mb-3">
+              <label data-v-890cce46="" style="color: rgb(0, 0, 0); font-weight: 700; font-size: 16px;">
+                氏名(カナ)
+                <span data-v-890cce46="" class="tag" style="color: rgb(255, 255, 255); background-color: rgb(198, 183, 141); font-size: 12px;">必須</span></label>
+              </label>
               <input type="text" class="form-control" placeholder="氏名(カナ)" required>
             </div>
+
+            <!-- メールアドレス -->
             <div class="mb-3">
-              <input type="email" class="form-control" placeholder="メールアドレス" required>
+              <label data-v-890cce46="" style="color: rgb(0, 0, 0); font-weight: 700; font-size: 16px;">
+                メールアドレス
+                <span data-v-890cce46="" class="tag" style="color: rgb(255, 255, 255); background-color: rgb(198, 183, 141); font-size: 12px;">必須</span></label>
+              </label>
+                <input type="email" class="form-control" placeholder="メールアドレス" required>
             </div>
+
+            <!-- 電話番号 -->
             <div class="mb-3">
-              <input type="tel" class="form-control" placeholder="電話番号" required>
-            </div>
-            <div class="mb-3">
+              <label data-v-890cce46="" style="color: rgb(0, 0, 0); font-weight: 700; font-size: 16px;">
+                電話番号 ※ハイフンを除く
+                <span data-v-890cce46="" class="tag" style="color: rgb(255, 255, 255); background-color: rgb(198, 183, 141); font-size: 12px;">必須</span></label>
+              </label>
+                <input type="tel" class="form-control" placeholder="電話番号" required>
+              </div>
+
+              <!-- 件名 -->
+              <div class="mb-3">
+                <label data-v-890cce46="" style="color: rgb(0, 0, 0); font-weight: 700; font-size: 16px;">
+                 件名
+              <span data-v-890cce46="" class="tag" style="color: rgb(255, 255, 255); background-color: rgb(198, 183, 141); font-size: 12px;">必須</span></label>
+              </label>
               <input type="text" class="form-control" placeholder="件名">
             </div>
   
             <!-- ご連絡方法 -->
+             <style>
+              .tag {
+                display: inline-block;
+                padding: 0.25em 0.4em;
+                font-size: 75%;
+                font-weight: bold;
+                line-height: 1;
+                color: #fff;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: baseline;
+                border-radius: 0.25rem;
+              }
+             </style>
             <div class="mb-3">
-              <label class="form-label">ご連絡方法</label>
+              <label data-v-890cce46="" style="color: rgb(0, 0, 0); font-weight: 700; font-size: 16px;">
+                ご連絡方法
+                <span data-v-890cce46="" class="tag" style="color: rgb(255, 255, 255); background-color: rgb(198, 183, 141); font-size: 12px;">必須</span>
+              </label>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="contactMethod" id="contactEmail" value="email" checked>
                 <label class="form-check-label" for="contactEmail">メール</label>
@@ -234,59 +471,79 @@
             <div class="mb-3">
               <textarea class="form-control" rows="5" placeholder="お問い合わせの内容" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">送信する</button>
+            <button type="submit" class="btn btn-primary" style="background-color: #C6B78D; border: none;">送信する</button>
           </form>
-        </div>
-  
-        <!-- 連絡先情報 -->
-        <div class="col-lg-6">
-          <div class="row g-3">
-            <!-- 住所カード -->
-            <div class="col-md-6">
-              <div class="p-3 bg-light rounded shadow-sm h-100 text-center">
-                <i class="bi bi-geo-alt fs-2 mb-2 text-primary"></i>
-                <h6 class="mb-1">住所</h6>
-                <p class="small mb-0">〒111-0034<br>東京都台東区雷門1-14-7-1101</p>
-              </div>
-            </div>
-            <!-- 電話カード -->
-            <div class="col-md-6">
-              <div class="p-3 bg-light rounded shadow-sm h-100 text-center">
-                <i class="bi bi-telephone fs-2 mb-2 text-success"></i>
-                <h6 class="mb-1">電話番号</h6>
-                <p class="small mb-0">03-3843-4566</p>
-              </div>
-            </div>
-            <!-- FAXカード -->
-            <div class="col-md-6">
-              <div class="p-3 bg-light rounded shadow-sm h-100 text-center">
-                <i class="bi bi-printer fs-2 mb-2 text-warning"></i>
-                <h6 class="mb-1">FAX</h6>
-                <p class="small mb-0">03-3847-9065</p>
-              </div>
-            </div>
-            <!-- メールカード -->
-            <div class="col-md-6">
-              <div class="p-3 bg-light rounded shadow-sm h-100 text-center">
-                <i class="bi bi-envelope fs-2 mb-2 text-danger"></i>
-                <h6 class="mb-1">メール</h6>
-                <p class="small mb-0">info@egao.co.jp</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <style>
+    div.page7 {
+        text-align: center;
+        background-color: #FFF3E3;
+        padding: 70px 0px 70px 0;
+    }
+    div.page7 p.tel-number {
+        color: #222;
+        font-size: 30px;
+        font-weight: 700;
+    }
+  </style>
+  <div class="m-5">
+    <div class="page7">
+      <h3 class="telcon">お電話でのお問い合わせはこちら</h3>
+      <p class="tel-number">03-6432-9769</p>
+      <p>(平日 9:00-18:00)</p>
+    </div>
+  </div>
+
+  <section class="py-5 text-center" style="background-color: #fff;">
+    <div class="container">
+      <!-- 書影 -->
+      <img
+        src="https://i0.wp.com/www.egao.co.jp/wp-content/uploads/2019/07/81K2kaRcPqL.jpg?w=600&ssl=1"
+        alt="表情で体が変わる かんたん笑顔呼吸"
+        class="img-fluid rounded mb-4"
+        style="max-width: 180px;"
+      />
+      <!-- タイトル -->
+      <h2 class="h3 mb-2">表情で体が変わる<br>かんたん笑顔呼吸</h2>
+      <!-- 著者 -->
+      <p class="mb-3">著者：門川 義彦</p>
+      <!-- 特徴リスト -->
+      <ul class="list-unstyled mb-4">
+        <li>✔️ 3ステップの表情エクササイズ</li>
+        <li>✔️ 呼吸法×表情筋の科学的アプローチ</li>
+        <li>✔️ ストレス軽減＆自律神経バランス改善</li>
+      </ul>
+      <!-- 購入ボタン -->
+      <a
+        href="https://www.amazon.co.jp/%E8%A1%A8%E6%83%85%E3%81%A7%E4%BD%93%E3%81%8C%E5%A4%89%E3%82%8F%E3%82%8B-%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E7%AC%91%E9%A1%94%E5%91%BC%E5%90%B8-%E9%96%80%E5%B7%9D-%E7%BE%A9%E5%BD%A6/dp/4862806902"
+        target="_blank"
+        class="btn btn-lg"
+        style="background-color: #FF8A65; border-color: #FF8A65; color: #fff;"
+        >Amazonで見る</a
+      >
+    </div>
+  </section>
+  
   
 
   <!-- フッター -->
-  <footer class="py-4 text-white" style="background-color: #B8D31A;">
+   <style>
+    footer div p {
+        color: #777;
+        text-decoration: none;
+    }
+   </style>
+
+  <footer class="py-4 text-white" style="background-color: #FFF1DE;">
     <div class="container text-center">
       <img src="./egao.jpg" alt="企業ロゴ" style="height: 100px; width: 250px; margin-bottom: 20px;">
       <p>&copy; 2025 株式会社 笑顔アメニティ研究所 All Rights Reserved.</p>
       <div class="social-links mt-3">
-        <a href="#" class="mx-2"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="mx-2" style="background-color: #C6B78D;"><i class="bi bi-twitter"></i></a>
         <a href="https://www.facebook.com/" class="mx-2"><i class="bi bi-facebook"></i></a>
       </div>
     </div>
