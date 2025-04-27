@@ -61,21 +61,30 @@ body {
     font-weight: 600;
   }
   
-  h2:after {
+  .h2-line {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 50px;
     height: 2px;
-    /* background-color: #007bff; */
+    background-color: #F38304;
+  }
+
+  h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 2px;
     background-color: #F38304;
   }
   
-  .text-center h2:after {
+  /* .text-center h2:after {
     left: 50%;
     transform: translateX(-50%);
-  }
+  } */
   
   /* カードのスタイル */
   .card {
