@@ -6,7 +6,6 @@
 
 /* 全体のスタイル */
 body {
-    padding-top: 56px; /* 固定ナビゲーションバーの高さ分 */
     font-family: 'Noto Sans JP', 'Helvetica Neue', Arial, sans-serif;
     color: #333;
   }

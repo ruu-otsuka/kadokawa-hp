@@ -22,26 +22,129 @@
           margin: 0px;
       }
     </style>
+
     <!-- ナビゲーションバー -->
-    <nav class="navbar navbar-expand-lg navbar-light text-light fixed-top" style="background-color: #FFF1DE;">
-      <div class="container">
-        <img src="./egao.webp" alt="企業ロゴ" style="height: 60px; width: 80px; margin-bottom: 5px;">
-        <!-- <a class="navbar-brand" href="index.html">株式会社 笑顔アメニティ研究所</a> -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <style>
+      body {
+          font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+          background-color: white;
+          overflow-y: scroll;
+          width: 100%;
+          color: rgb(68, 68, 68);
+          margin: 0px;
+      }
+  
+      .text-kadokawa {
+        color: #730C0B !important;
+      }
+    </style>
+    <!-- ナビゲーションバー -->
+  <!-- ================== Instagram風グラデーション・ヘッダーパーツ ================== -->
+  <style>
+    /* --- Rainbow Sticky Navbar ------------------------------- */
+    .rainbow-nav{
+      background: linear-gradient(90deg,#F58529 0%,#DD2A7B 45%,#8134AF 100%);
+      border:none;
+      box-shadow:0 2px 6px rgba(0,0,0,.15);
+      z-index:1055;                /* Bootstrap のモーダルより下、ツールチップより上 */
+    }
+    
+    .rainbow-nav .navbar-brand,
+    .rainbow-nav .nav-link,
+    .rainbow-nav .nav-icon{
+      color:#fff;
+    }
+    
+    .rainbow-nav .nav-link{
+      font-weight:600;
+      letter-spacing:.04em;
+      position:relative;
+      transition:color .25s;
+    }
+    .rainbow-nav .nav-link::after{
+      content:'';
+      position:absolute;
+      left:0; right:0; bottom:0;
+      height:2px;
+      background:#fff;
+      transform:scaleX(0);
+      transition:transform .25s;
+    }
+    .rainbow-nav .nav-link:hover,
+    .rainbow-nav .nav-link:focus{
+      color:#fffbe6;
+    }
+    .rainbow-nav .nav-link:hover::after,
+    .rainbow-nav .nav-link.active::after{
+      transform:scaleX(1);
+    }
+    
+    /* ハンバーガーの色を白に */
+    .rainbow-nav .navbar-toggler{
+      border-color:rgba(255,255,255,.6);
+    }
+    .rainbow-nav .navbar-toggler-icon{
+      background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='%23ffffff'><path stroke='rgba(0,0,0,0)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    }
+    
+    /* 連絡先アイコン共通 */
+    .nav-icon{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:0 .35rem;
+      font-size:1.25rem;
+      transition:opacity .25s;
+    }
+    .nav-icon:hover{ opacity:.8; }
+    
+    .brand-caption{
+      font-size:1.15rem;
+      font-weight:700;
+      line-height:1.2;
+    }
+    
+    /* モバイル時のナビ間隔を広めに */
+    @media (max-width:991.98px){
+      .rainbow-nav .nav-link{ padding:.75rem 1rem; }
+    }
+    </style>
+    <!-- ▼ Rainbow Sticky Navbar ここから ▼ -->
+    <nav class="navbar navbar-expand-lg navbar-light rainbow-nav sticky-top">
+      <div class="container-fluid">
+    
+        <!-- ブランド（ロゴ画像は従来のパスをそのまま利用） -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="./img/egao.jpg" alt="笑顔アメニティ研究所 ロゴ" height="52" class="me-2">
+          <span class="brand-caption d-none d-md-inline">笑顔アメニティ研究所</span>
+        </a>
+    
+        <!-- 連絡先アイコン（デスクトップのみ表示） -->
+        <div class="d-none d-lg-flex align-items-center me-3 contact-icons">
+          <a href="tel:+81123456789"  class="nav-icon"><i class="bi bi-telephone-fill"></i></a>
+          <a href="mailto:info@example.com" class="nav-icon"><i class="bi bi-envelope-fill"></i></a>
+          <a href="https://maps.google.com/?q=東京駅" class="nav-icon"><i class="bi bi-geo-alt-fill"></i></a>
+        </div>
+    
+        <!-- ハンバーガー -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarRainbow" aria-controls="navbarRainbow"
+                aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">ホーム</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">会社概要</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#contact">お問い合わせ</a>
-            </li>
+    
+        <!-- ナビゲーションリンク -->
+        <div class="collapse navbar-collapse" id="navbarRainbow">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">ホーム</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">会社概要</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">お問い合わせ</a></li>
           </ul>
+    
+          <!-- 連絡先アイコン（モバイル表示時は折りたたみ領域内に） -->
+          <div class="d-lg-none mt-3 contact-icons">
+            <a href="tel:+81123456789"    class="nav-icon me-3"><i class="bi bi-telephone-fill"></i></a>
+            <a href="mailto:info@example.com" class="nav-icon me-3"><i class="bi bi-envelope-fill"></i></a>
+            <a href="https://maps.google.com/?q=東京駅" class="nav-icon"><i class="bi bi-geo-alt-fill"></i></a>
+          </div>
         </div>
       </div>
     </nav>
@@ -265,13 +368,13 @@
          <div id="ninninCarousel" class="carousel slide container" data-bs-ride="carousel" data-bs-interval="3000">
            <div class="carousel-inner">
              <div class="carousel-item active">
-               <img src="kansya.jpg" class="d-block w-100" alt="画像1">
+               <img src="./img/kansya.jpg" class="d-block w-100" alt="画像1">
              </div>
              <div class="carousel-item">
-               <img src="nihon.jpg" class="d-block w-100" alt="画像2">
+               <img src="./img/nihon.jpg" class="d-block w-100" alt="画像2">
              </div>
              <div class="carousel-item">
-               <img src="rumine.jpg" class="d-block w-100" alt="画像3">
+               <img src="./img/rumine.jpg" class="d-block w-100" alt="画像3">
              </div>
            </div>
            <button class="carousel-control-prev" type="button" data-bs-target="#ninninCarousel" data-bs-slide="prev">
@@ -334,24 +437,26 @@
 
 
   <!-- フッター -->
-     <!-- フッター -->
-     <style>
-      footer div p {
-          color: #777;
-          text-decoration: none;
-      }
-     </style>
-  
-    <footer class="py-4 text-white" style="background-color: #FFF1DE;">
-      <div class="container text-center">
-        <img src="./egao.jpg" alt="企業ロゴ" style="height: 100px; width: 250px; margin-bottom: 20px;">
-        <p>&copy; 2025 株式会社 笑顔アメニティ研究所 All Rights Reserved.</p>
-        <div class="social-links mt-3">
-          <a href="https://x.com/kadokawa2525?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1902168158875832766%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=file%3A%2F%2F%2FUsers%2Fruu%2FWORKS%2Fkadokawa-hp%2Findex.htmlcontact" class="mx-2"><i class="bi bi-twitter"></i></a>
-          <a href="https://www.facebook.com/kadokawa" class="mx-2"><i class="bi bi-facebook"></i></a>
-        </div>
+   <!-- フッター -->
+   <style>
+    footer div p {
+        color: #fff;
+        text-decoration: none;
+    }
+   </style>
+
+  <footer class="py-4 text-white" style="background: linear-gradient(90deg,#F58529 0%,#DD2A7B 45%,#8134AF 100%);
+">
+    <div class="container text-center">
+      <img src="./img/egao.jpg" alt="企業ロゴ" style="height: 100px; width: 250px; margin-bottom: 20px;">
+      <p>&copy; 2025 株式会社 笑顔アメニティ研究所 All Rights Reserved.</p>
+      <div class="social-links mt-3">
+        <a href="https://x.com/kadokawa2525?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1902168158875832766%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=file%3A%2F%2F%2FUsers%2Fruu%2FWORKS%2Fkadokawa-hp%2Findex.htmlcontact" class="mx-2"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/kadokawa" class="mx-2"><i class="bi bi-facebook"></i></a>
       </div>
-    </footer>
+    </div>
+  </footer>
+
     <!-- Facebook SDK -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v18.0" nonce="random_nonce"></script>
