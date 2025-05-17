@@ -74,6 +74,10 @@ li {
   border-radius:.25rem;
 }
 
+.accent-text {
+  color: var(--accent-color);
+}
+
 /* ---------- ページヘッダー（会社概要ページ用） ------------------------------ */
 /* ---------- ページヘッダー（会社概要ページ用） ------------------------------ */
 /* ---------- ページヘッダー（会社概要ページ用） ------------------------------ */
@@ -100,6 +104,32 @@ li {
   border: none;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
+}
+
+#greetings-card {
+  box-shadow: none;
+}
+
+#greetings-card p {
+  font-size: 1.3rem;
+}
+
+#greetings-card h4 {
+  font-size: 1.5rem;
+  font-weight: 1000 !important;
+}
+
+#profile-card {
+  box-shadow: none;
+}
+
+#profile-card p {
+  font-size: 1.3rem;
+}
+
+#profile-card h4 {
+  font-size: 1.5rem;
+  font-weight: 1000 !important;
 }
 
 .card:hover {
@@ -430,7 +460,7 @@ div.page7 p.tel-number {
 /* ---------- ヒーローセクション ------------------------------ */
 /* ---------- ヒーローセクション ------------------------------ */
 .hero {
-  color: #fff;
+  color: var(--base-color);
 }
 
 /* ヒーローセクション */
@@ -441,7 +471,7 @@ div.page7 p.tel-number {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
+  color: var(--base-color);
   position: relative;
 }
 
@@ -462,13 +492,16 @@ div.page7 p.tel-number {
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
 }
+
 .hero-content {
   position: relative;
   z-index: 1;
   top: 50%; transform: translateY(-50%);
 }
-.feature-icon { font-size: 2rem; }
-footer { background: #f8f9fa; padding: 2rem 0; }
+
+.feature-icon {
+  font-size: 2rem;
+}
 
 /* ボタン */
 div.page1-3 {
@@ -638,6 +671,11 @@ ul { padding-left: 1.25rem; }
 /* ---------- footer ------------------------------ */
 /* ---------- footer ------------------------------ */
 /* ---------- footer ------------------------------ */
+  footer {
+    background: var(--main-color);
+    padding: 2rem 0;
+  }
+
   footer div p {
       color: var(--base-color);
       text-decoration: none;
