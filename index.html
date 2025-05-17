@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>株式会社 笑顔アメニティ研究所 - 公式ホームページ</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- カスタム css -->
   <link rel="stylesheet" href="styles.css">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link5
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
+  <!-- font awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -80,82 +80,12 @@
       </div>
     </div>
   </header>
-  <style>
-    /* カスタムスタイル */
-    body { font-family: 'Noto Sans JP', sans-serif; }
-    .hero {
-      color: #fff;
-    }
-
-    /* ヒーローセクション */
-    .hero-section {
-      height: 100vh;
-      min-height: 500px;
-      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url('./img/hero.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      color: white;
-      position: relative;
-    }
-    
-    .hero-section h1 {
-      font-size: 3.5rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-    
-    .hero-section .lead {
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    }
-
-    .hero-overlay {
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%;
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      top: 50%; transform: translateY(-50%);
-    }
-    .feature-icon { font-size: 2rem; }
-    footer { background: #f8f9fa; padding: 2rem 0; }
-  
-    /* 虹色ボタン */
-    div.page1-3 {
-      font-size: 17px;
-      position: relative;
-      margin-top: 30px;
-      color: #fff;
-      border-radius: 70px;
-      background: #d19a61;
-      /* background: linear-gradient(to left, #9a2f8d 0%, #c02853 30%, #d63b27 65%, #de6733 75%, #e17e3b 80%, #ecbb4c 100%); */
-      -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-      width: 354.188px;
-      height: 80px;
-      margin-top: 30px;
-    }
-    a.btn-c {
-        font-size: 17px;
-        position: relative;
-        padding: 1.65rem 5.1rem 1.65rem 5.1rem;
-        color: #fff;
-    }
-  </style>
-
-<!-- ここを埋めたら勝ち -->
 
 <!-- よくある悩み -->
 <div class="container">
-  <!-- Font Awesome CDN（6.x）を読み込む ※一度だけ -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
 <!-- ──────────────  よくある経営者の悩み  ────────────── -->
-<section id="pain-points" class="py-5 bg-light">
+<section id="pain-points" class="py-5">
   <div class="container">
     <h2 class="mb-4 text-center">よくある <span class="text-kadokawa">経営者の悩み</span></h2>
 
@@ -262,11 +192,8 @@
 
 
 <!-- 事業紹介 -->
-<!-- ★ すでに読み込んでいる場合は重複読み込み不要です ↓ -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- ★ ここまで -->
 
-<section class="py-5 bg-light" id="about-happy-egao">
+<section class="py-5" id="about-happy-egao">
   <div class="container">
 
     <!-- 見出し -->
@@ -308,12 +235,6 @@
 
   </div><!-- /.container -->
 </section>
-
-<!-- 任意：補足のカスタム CSS（色味や余白の微調整） -->
-<style>
-  #about-happy-egao .card-body { line-height: 1.8; }
-  #about-happy-egao h2 span { font-size: 1.2em; }
-</style>
 
 
 
@@ -363,23 +284,15 @@
 </section>
 
 <!-- 事業説明 -->
- <style>
-  li {
-    text-decoration: none;
-  }
- </style>
 <section class="plan-setsumei py-5">
   <div class="container">
     <div class="row g-4">
-
       <!-- 入門編 -->
       <div class="col-md-6">
         <div class="course-card border-0 h-100 shadow-sm position-relative course-mid">
           <!-- 円形バッジ -->
           <!-- <span class="badge-round">受講目安<br><strong>2ヶ月</strong></span> -->
-
           <div class="card-header text-center fw-bold fs-4 text-white bg-mid">入門編</div>
-
           <div class="card-body p-5">
             <!-- 対象 -->
             <h6 class="title">対象</h6>
@@ -388,20 +301,17 @@
               <li>笑顔リーダー</li>
               <li>全スタッフ</li>
             </ul>
-
             <!-- 内容 -->
             <h6 class="title">内容</h6>
             <ul class="mb-4">
               <li>わりばしストレッチ</li>
               <li>スマイル握手</li>
               <li>ハッピー体操</li>
-
               <li>笑顔の力(日本人は笑顔が苦手)</li>
               <li>笑顔は技術</li>
               <li>外面で損しない方法、笑顔づくりの６箇条</li>
               アイコンタクト、割り箸ストレッチ、ハッピー体操、笑顔呼吸、笑顔のキャッチボール
             </ul>
-
             <!-- 説明 -->
             <h6 class="title">効果</h6>
             <ul class="check-list">
@@ -418,16 +328,13 @@
         <div class="course-card border-0 h-100 shadow-sm position-relative course-adv">
           <!-- 円形バッジ -->
           <!-- <span class="badge-round">受講目安<br><strong>2ヶ月</strong></span> -->
-
           <div class="card-header text-center fw-bold fs-4 text-white bg-adv">実践編</div>
-
           <div class="card-body p-5">
             <!-- 対象 -->
             <h6 class="title">対象</h6>
             <ul class="mb-4">
               <li>「ハッピー笑顔塾入門編」を体験した方が対象</li>
             </ul>
-
             <!-- 内容 -->
             <h6 class="title">内容</h6>
             <ul class="mb-4">
@@ -437,7 +344,6 @@
               <li>環境ベーシック・アイコンタクト・笑顔づくり・笑顔のシナリオ化・フォーメーション・効率</li>
               <li>門川式自然な笑顔の作り方、笑顔レッスン</li>
             </ul>
-
             <!-- 目指せる姿 -->
             <h6 class="title">効果</h6>
             <ul class="check-list">
@@ -447,76 +353,13 @@
           </div><!-- /.card-body -->
         </div><!-- /.course-card -->
       </div><!-- /.col -->
-
     </div><!-- /.row -->
   </div><!-- /.container -->
 </section>
 
-<!-- カスタム CSS -->
-<style>
-  /* ------- カラー変数 ------- */
-  :root {
-    --mid-color: #d8b335;  /* ゴールド系 */
-    --adv-color: #e53955;  /* レッド系 */
-    --light-bg: #fafafa;
-  }
-
-  /* ------- 共通カード ------- */
-  .course-card { background: #fff; border-radius: .5rem; }
-  .card-header { border-top-left-radius: .5rem; border-top-right-radius: .5rem; }
-  .course-mid .card-header { background: var(--mid-color); }
-  .course-adv .card-header { background: var(--adv-color); }
-
-  /* ------- 丸バッジ ------- */
-  .badge-round {
-    position: absolute;
-    top: -20px;
-    left: 20px;
-    width: 90px;
-    height: 90px;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    background: #fff;
-    font-size: .75rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 1.1;
-    color: #333;
-    z-index: 1;
-  }
-  .course-mid .badge-round { border-color: var(--mid-color); }
-  .course-adv .badge-round { border-color: var(--adv-color); }
-
-  /* ------- セクションタイトル ------- */
-  .title { font-weight: 700; margin-bottom: .25rem; border-bottom: 1px solid #ddd; padding-bottom: .25rem; }
-
-  /* ------- リスト ------- */
-  ul { padding-left: 1.25rem; }
-  .check-list li::before {
-    content: '\f00c';  /* Font Awesome check */
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    color: #ff6600;
-    margin-right: .5rem;
-  }
-
-  /* ------- ハイライト ------- */
-  .hl { background: linear-gradient(transparent 60%, rgba(255,200,0,.3) 60%); font-weight: 700; }
-
-  /* ------- 間隔・背景 ------- */
-  .plan-setsumei { background: var(--light-bg); }
-</style>
   
   <!-- セミナー詳細 -->
-   <style>
-    .syousai {
-      background-color: linear-gradient(to left, #9a2f8d 0%, #c02853 30%, #d63b27 65%, #de6733 75%, #e17e3b 80%, #ecbb4c 100%);
-    }
-
-   </style>
-<section class="price-section py-5 bg-light">
+<section class="price-section py-5">
   <div class="container syousai">
     <div class="row justify-content-center">
       <div class="col-lg-8 col-md-10">

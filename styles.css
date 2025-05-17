@@ -1,8 +1,15 @@
-html {
+/* ---------- 全体の変数 ------------------------------ */
+/* ---------- 全体の変数 ------------------------------ */
+/* ---------- 全体の変数 ------------------------------ */
+:root {
   --main-color: #46292a;
   --base-color: #fff;
+  --base-color-shaded: #dfdfdf;
   --accent-color: #dd9c4c;
   --accent-color-shaded: #cd8f3f;
+  --mid-color: #d8b335;  /* ゴールド系 */
+  --adv-color: #e53955;  /* レッド系 */
+  --light-bg: #fafafa;
 }
 
 /* bootstarap */
@@ -11,31 +18,14 @@ html {
   --bs-btn-border-color: var(--accent-color-shaded) !important;
 }
 
-/* 全体のスタイル */
+/* ---------- 全体のスタイル ------------------------------ */
 body {
   color: var(--main-color);
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
-  background-color: white;
+  background-color: var(--base-color);
   overflow-y: scroll;
   width: 100%;
   margin: 0px;
-}
-
-.text-kadokawa {
-  color: #730C0B !important;
-}
-  
-/* ページヘッダー（会社概要ページ用） */
-.page-header {
-  background-color: #f8f9fa;
-  padding: 80px 0 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #dee2e6;
-}
-
-.page-header h1 {
-  font-weight: 700;
-  color: var(--main-color);
 }
 
 /* セクションのスタイル */
@@ -70,6 +60,27 @@ h2:after {
   background-color: var(--accent-color-shaded);
 }
 
+li {
+  text-decoration: none;
+}
+
+/* ページヘッダー（会社概要ページ用） */
+.text-kadokawa {
+  color: var(--main-color) !important;
+}
+
+.page-header {
+  background-color: #f8f9fa;
+  padding: 80px 0 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.page-header h1 {
+  font-weight: 700;
+  color: var(--main-color);
+}
+
 /* カードのスタイル */
 .card {
   border: none;
@@ -79,6 +90,13 @@ h2:after {
 
 .card:hover {
   transform: translateY(-5px);
+}
+
+#about-happy-egao .card-body {
+  line-height: 1.8;
+}
+#about-happy-egao h2 span {
+  font-size: 1.2em;
 }
 
 /* SNS埋め込みのスタイル */
@@ -225,25 +243,10 @@ h2:after {
   }
 }
 
-.carousel-item {
-  display: flex;
-  justify-content: center;  /* 左右中央ぞろえ */
-  align-items: center;      /* 上下中央ぞろえ */
-  /* height: 300px;            必要に応じて調整 */
-  background-color: var(--base-color); /* 背景つけてもOK */
-}
 
-.carousel-item img {
-  width: 80%;               /* 縮小サイズ */
-  max-width: 500px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 10px;
-}
-
-/* --- Navbar ------------------------------- */
-/* --- Navbar ------------------------------- */
-/* --- Navbar ------------------------------- */
+/* ---------- Navbar ----------------------------------------- */
+/* ---------- Navbar ----------------------------------------- */
+/* ---------- Navbar ----------------------------------------- */
 .rainbow-nav{
   /* background: linear-gradient(90deg,#F58529 0%,#DD2A7B 45%,#8134AF 100%); */
   background: #46292A;
@@ -374,6 +377,159 @@ h2:after {
   }
 }
 
+/* ---------- ヒーローセクション ------------------------------ */
+/* ---------- ヒーローセクション ------------------------------ */
+/* ---------- ヒーローセクション ------------------------------ */
+.hero {
+  color: #fff;
+}
+
+/* ヒーローセクション */
+.hero-section {
+  height: 100vh;
+  min-height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url('./img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .lead {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  top: 50%; transform: translateY(-50%);
+}
+.feature-icon { font-size: 2rem; }
+footer { background: #f8f9fa; padding: 2rem 0; }
+
+/* 虹色ボタン */
+div.page1-3 {
+  font-size: 17px;
+  position: relative;
+  margin-top: 30px;
+  color: #fff;
+  border-radius: 70px;
+  background: #d19a61;
+  /* background: linear-gradient(to left, #9a2f8d 0%, #c02853 30%, #d63b27 65%, #de6733 75%, #e17e3b 80%, #ecbb4c 100%); */
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  width: 354.188px;
+  height: 80px;
+  margin-top: 30px;
+}
+a.btn-c {
+    font-size: 17px;
+    position: relative;
+    padding: 1.65rem 5.1rem 1.65rem 5.1rem;
+    color: #fff;
+}
+
+/* ---------- 入門・実践カード ------------------------------ */
+/* ---------- 入門・実践カード ------------------------------ */
+/* ---------- 入門・実践カード ------------------------------ */
+/* ------- 共通カード ------- */
+.course-card {
+  background: var(----base-color);
+  border-radius: .5rem;
+}
+.card-header {
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+.course-mid .card-header {
+  background: var(--mid-color);
+}
+.course-adv .card-header {
+  background: var(--adv-color);
+}
+
+/* ------- 丸バッジ ------- */
+.badge-round {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  width: 90px;
+  height: 90px;
+  border: 3px solid var(--base-color);
+  border-radius: 50%;
+  background: var(--base-color);
+  font-size: .75rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1;
+  color: var(--main-color);
+  z-index: 1;
+}
+
+.course-mid .badge-round {
+  border-color: var(--mid-color);
+}
+
+.course-adv .badge-round {
+  border-color: var(--adv-color);
+}
+
+/* ------- セクションタイトル ------- */
+.title {
+  font-weight: 700;
+  margin-bottom: .25rem; border-bottom: 1px solid #ddd;
+  padding-bottom: .25rem;
+}
+
+/* ------- リスト ------- */
+ul { padding-left: 1.25rem; }
+
+.check-list li::before {
+  content: '\f00c';  /* Font Awesome check */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: var(--accent-color);
+  margin-right: .5rem;
+}
+
+/* ------- ハイライト ------- */
+.hl {
+  background: linear-gradient(transparent 60%, rgba(255,200,0,.3) 60%);
+  font-weight: 700;
+}
+
+/* ------- 間隔・背景 ------- */
+.plan-setsumei {
+  background: var(--base-color);
+}
+
+/* ----------セミナー詳細 ------------------------------　*/
+/* ----------セミナー詳細 ------------------------------　*/
+/* ----------セミナー詳細 ------------------------------　*/
+.price-section{
+  background-color: var(--base-color-shaded);
+}
+
+.syousai {
+  background-color: var(--base-color-shaded);
+}
+
 /* ---------- 企業情報 ------------------------------ */
 /* ---------- 企業情報 ------------------------------ */
 /* ---------- 企業情報 ------------------------------ */
@@ -386,6 +542,22 @@ h2:after {
 /* ---------- 賞状カルーセル ----------------------------- */
 .certificate-carousel{
   width: 300px;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;  /* 左右中央ぞろえ */
+  align-items: center;      /* 上下中央ぞろえ */
+  /* height: 300px;            必要に応じて調整 */
+  background-color: var(--base-color); /* 背景つけてもOK */
+}
+
+.carousel-item img {
+  width: 80%;               /* 縮小サイズ */
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 /* ---------- footer ------------------------------ */
