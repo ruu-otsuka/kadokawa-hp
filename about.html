@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,156 +9,77 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="styles.css">
   <!-- Bootstrap CSS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-NTdWf9h4mxnK4AAI6HVp9D9iLtZf5w4BjHd+uDFfXjhuK9VUiGhraE1PE5/0ZwZ3"
-          crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-NTdWf9h4mxnK4AAI6HVp9D9iLtZf5w4BjHd+uDFfXjhuK9VUiGhraE1PE5/0ZwZ3" crossorigin="anonymous"></script>
 </head>
-<body>
-  <body>
-    <style>
-      body {
-          font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", sans-serif;
-          background-color: white;
-          overflow-y: scroll;
-          width: 100%;
-          color: rgb(68, 68, 68);
-          margin: 0px;
-      }
-    </style>
 
-    <!-- ナビゲーションバー -->
-    <style>
-      body {
-          font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", sans-serif;
-          background-color: white;
-          overflow-y: scroll;
-          width: 100%;
-          color: rgb(68, 68, 68);
-          margin: 0px;
-      }
-  
-      .text-kadokawa {
-        color: #730C0B !important;
-      }
-    </style>
-    <!-- ナビゲーションバー -->
-  <!-- ================== Instagram風グラデーション・ヘッダーパーツ ================== -->
-  <style>
-    /* --- Rainbow Sticky Navbar ------------------------------- */
-    .rainbow-nav{
-      background: linear-gradient(90deg,#F58529 0%,#DD2A7B 45%,#8134AF 100%);
-      border:none;
-      box-shadow:0 2px 6px rgba(0,0,0,.15);
-      z-index:1055;                /* Bootstrap のモーダルより下、ツールチップより上 */
-    }
-    
-    .rainbow-nav .navbar-brand,
-    .rainbow-nav .nav-link,
-    .rainbow-nav .nav-icon{
-      color:#fff;
-    }
-    
-    .rainbow-nav .nav-link{
-      font-weight:600;
-      letter-spacing:.04em;
-      position:relative;
-      transition:color .25s;
-    }
-    .rainbow-nav .nav-link::after{
-      content:'';
-      position:absolute;
-      left:0; right:0; bottom:0;
-      height:2px;
-      background:#fff;
-      transform:scaleX(0);
-      transition:transform .25s;
-    }
-    .rainbow-nav .nav-link:hover,
-    .rainbow-nav .nav-link:focus{
-      color:#fffbe6;
-    }
-    .rainbow-nav .nav-link:hover::after,
-    .rainbow-nav .nav-link.active::after{
-      transform:scaleX(1);
-    }
-    
-    /* ハンバーガーの色を白に */
-    .rainbow-nav .navbar-toggler{
-      border-color:rgba(255,255,255,.6);
-    }
-    .rainbow-nav .navbar-toggler-icon{
-      background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='%23ffffff'><path stroke='rgba(0,0,0,0)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
-    }
-    
-    /* 連絡先アイコン共通 */
-    .nav-icon{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:0 .35rem;
-      font-size:1.25rem;
-      transition:opacity .25s;
-    }
-    .nav-icon:hover{ opacity:.8; }
-    
-    .brand-caption{
-      font-size:1.15rem;
-      font-weight:700;
-      line-height:1.2;
-    }
-    
-    /* モバイル時のナビ間隔を広めに */
-    @media (max-width:991.98px){
-      .rainbow-nav .nav-link{ padding:.75rem 1rem; }
-    }
-    </style>
-    <!-- ▼ Rainbow Sticky Navbar ここから ▼ -->
-    <nav class="navbar navbar-expand-lg navbar-light rainbow-nav sticky-top">
-      <div class="container-fluid">
-        <!-- ブランド（ロゴ画像は従来のパスをそのまま利用） -->
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="./img/egao.jpg" alt="笑顔アメニティ研究所 ロゴ" height="52" class="me-2">
-          <span class="brand-caption d-none d-md-inline">笑顔アメニティ研究所</span>
-        </a>
-    
-        <!-- 連絡先アイコン（デスクトップのみ表示） -->
-        <div class="d-none d-lg-flex align-items-center me-3 contact-icons">
-          <a href="tel:+81123456789"  class="nav-icon"><i class="bi bi-telephone-fill"></i></a>
-          <a href="mailto:info@example.com" class="nav-icon"><i class="bi bi-envelope-fill"></i></a>
-          <a href="https://maps.google.com/?q=東京駅" class="nav-icon"><i class="bi bi-geo-alt-fill"></i></a>
+<body>
+  <!-- ▼ Navbar ここから ▼ -->
+  <nav class="navbar navbar-expand-lg navbar-light rainbow-nav sticky-top">
+    <div class="container-fluid">
+      <!-- ブランド（ロゴ画像と文言を含めた構造） -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <div class="logo-circle">
+          <img src="./img/egao_logo.jpg" alt="笑顔アメニティ研究所 ロゴ">
         </div>
-    
-        <!-- ハンバーガー -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarRainbow" aria-controls="navbarRainbow"
-                aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <!-- ナビゲーションリンク -->
-        <div class="collapse navbar-collapse" id="navbarRainbow">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="index.html">ホーム</a></li>
-            <li class="nav-item"><a class="nav-link active" href="about.html">会社概要</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">お問い合わせ</a></li>
-          </ul>
-    
-          <!-- 連絡先アイコン（モバイル表示時は折りたたみ領域内に） -->
-          <div class="d-lg-none mt-3 contact-icons">
-            <a href="tel:+81123456789"    class="nav-icon me-3"><i class="bi bi-telephone-fill"></i></a>
-            <a href="mailto:info@example.com" class="nav-icon me-3"><i class="bi bi-envelope-fill"></i></a>
-            <a href="https://maps.google.com/?q=東京駅" class="nav-icon"><i class="bi bi-geo-alt-fill"></i></a>
-          </div>
+        <div class="brand-text">
+          <div class="anniversary-text">おかげさまで35周年</div>
+          <div class="company-slogan">笑顔研修・笑顔セミナーの専門ラボ</div>
+          <div class="company-name">株式会社笑顔ｱﾒﾆﾃｨ研究所</div>
+        </div>
+        <!-- <span class="brand-caption d-none d-md-inline ms-2">笑顔アメニティ研究所</span> -->
+      </a>
+      <!-- 連絡先アイコン（デスクトップのみ表示） -->
+      <div class="d-none d-lg-flex align-items-center me-3 contact-icons">
+        <a href="tel:+81123456789" class="nav-icon">
+          <i class="bi bi-telephone-fill"></i>
+        </a>
+        <a href="mailto:info@example.com" class="nav-icon">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+        <a href="https://maps.google.com/?q=%E6%9D%B1%E4%BA%AC%E9%A7%85" class="nav-icon">
+          <i class="bi bi-geo-alt-fill"></i>
+        </a>
+      </div>
+      <!-- ハンバーガー -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRainbow" aria-controls="navbarRainbow" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+      <!-- ナビゲーションリンク -->
+      <div class="collapse navbar-collapse" id="navbarRainbow">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">会社概要</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">お問い合わせ</a>
+          </li>
+        </ul>
+        <!-- 連絡先アイコン（モバイル表示時は折りたたみ領域内に） -->
+        <div class="d-lg-none mt-3 contact-icons">
+          <a href="tel:+81123456789" class="nav-icon me-3">
+            <i class="bi bi-telephone-fill"></i>
+          </a>
+          <a href="mailto:info@example.com" class="nav-icon me-3">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+          <a href="https://maps.google.com/?q=%E6%9D%B1%E4%BA%AC%E9%A7%85" class="nav-icon">
+            <i class="bi bi-geo-alt-fill"></i>
+          </a>
         </div>
       </div>
-    </nav>
-
+    </div>
+  </nav>
+  <!-- ▲ Navbar ここまで ▲ -->
   <!-- ページヘッダー -->
   <header class="page-header">
     <div class="container">
       <h1>会社概要</h1>
     </div>
   </header>
-
   <!-- 会社概要セクション -->
   <section class="py-5">
     <div class="container">
@@ -169,10 +91,14 @@
           <p>幸せを分ち合える笑顔文化の基礎をつくります。</p>
           <p>EGAO :</p>
           <ul>
-            <li><strong>E enjoy</strong> - 楽しくないと人生じゃない、もっと創造的に生きる。</li>
-            <li><strong>G goal</strong> - 夢を語り、ワクワクドキドキ、成功のイメージを描く。</li>
-            <li><strong>A action</strong> - リラックスして出来そうな、小さな具体的行動をとる。</li>
-            <li><strong>O only one</strong> - 世界で一番の笑顔は、あなたです。</li>
+            <li>
+              <strong>E enjoy</strong>- 楽しくないと人生じゃない、もっと創造的に生きる。</li>
+            <li>
+              <strong>G goal</strong>- 夢を語り、ワクワクドキドキ、成功のイメージを描く。</li>
+            <li>
+              <strong>A action</strong>- リラックスして出来そうな、小さな具体的行動をとる。</li>
+            <li>
+              <strong>O only one</strong>- 世界で一番の笑顔は、あなたです。</li>
           </ul>
         </div>
         <div class="col-lg-6">
@@ -181,16 +107,15 @@
       </div>
     </div>
   </section>
-
   <!-- 会社情報テーブル -->
   <section class="py-5 bg-light">
     <div class="container">
       <h2 class="mb-4">会社情報</h2>
       <div class="table-responsive">
         <table class="table table-bordered">
-          <tbody>
+          <tbody class="organization-info-table">
             <tr>
-              <th scope="row" class="bg-light" style="width: 30%;">会社名</th>
+              <th scope="row" class="bg-light">会社名</th>
               <td>株式会社 笑顔アメニティ研究所</td>
             </tr>
             <tr>
@@ -230,7 +155,6 @@
       </div>
     </div>
   </section>
-
   <!-- 沿革セクション -->
   <section class="py-5">
     <div class="container">
@@ -261,13 +185,14 @@
           <div class="timeline-date">現在</div>
           <div class="timeline-content">
             <h5>新たな挑戦</h5>
-            <p>新規事業：「ハッピー笑顔塾」AI時代だからこそ、笑顔はオアシス。<span>門川は人間愛を通して、笑顔のある家庭・会社・社会を作ります。</span></p>
+            <p>新規事業：「ハッピー笑顔塾」AI時代だからこそ、笑顔はオアシス。
+              <span>門川は人間愛を通して、笑顔のある家庭・会社・社会を作ります。</span>
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <!-- 代表プロフィールセクション -->
   <section class="py-5 bg-light">
     <div class="container">
@@ -275,25 +200,23 @@
       <div class="row">
         <div class="col-lg-5 mb-4">
           <div class="profile-image-container">
-            <img src="daihyo.jpeg" alt="門川義彦" class="img-fluid rounded profile-image">
+            <img src="./img/daihyo.jpeg" alt="門川義彦" class="img-fluid rounded profile-image">
           </div>
         </div>
         <div class="col-lg-7">
           <div class="profile-content">
             <h3 class="mb-3">笑顔コンサルタント 門川義彦</h3>
             <p class="lead mb-4">こんにちは、世界初の笑顔コンサルタント、門川義彦です。</p>
-            
-            <p><strong>笑顔は幸福のモノサシです。</strong><br>
-            あなたの会社やお店、家庭で笑顔を忘れてませんか？</p>
-            
-            <p>実は笑顔のよさは普段の顔で決まります。<br>
-            笑顔づくりには心の持ち様がいちばん大切ですが、ある意味で笑顔づくりのテクニックというものも必要なのです。そこで、まず自分の普段の顔をチェックしてみましょう。</p>
-            
+            <p>
+              <strong>笑顔は幸福のモノサシです。</strong>
+              <br>あなたの会社やお店、家庭で笑顔を忘れてませんか？</p>
+            <p>実は笑顔のよさは普段の顔で決まります。
+              <br>笑顔づくりには心の持ち様がいちばん大切ですが、ある意味で笑顔づくりのテクニックというものも必要なのです。そこで、まず自分の普段の顔をチェックしてみましょう。</p>
             <p>特にストレスを強く感じる時や体調の悪い時は、真顔にその人の悪い特徴がたくさん表れてきます。一日の生活の中では、笑顔でいるより真顔でいるほうがはるかに長いため、普段の表情というものが特に重要なのです。</p>
-            
-            <p class="quote"><strong>儲かるから笑顔になる？<br>
-            いいえ、笑顔だから儲かるんです！</strong></p>
-            
+            <p class="quote">
+              <strong>儲かるから笑顔になる？
+                <br>いいえ、笑顔だから儲かるんです！</strong>
+            </p>
             <ul class="profile-achievements mt-4">
               <li>TV・雑誌等メディア出演多数</li>
               <li>株式会社笑顔アメニティ研究所 代表取締役</li>
@@ -304,7 +227,6 @@
       </div>
     </div>
   </section>
-
   <!-- 事業実績セクション -->
   <section class="py-5">
     <div class="container">
@@ -363,50 +285,61 @@
             </ul>
           </div>
         </div>
-        <p class="text-muted mt-3">その他 多数。<br>※順不同、敬称略</p>
+        <p class="text-muted mt-3">その他 多数。
+          <br>※順不同、敬称略</p>
       </div>
       <!-- 賞状カルーセル -->
-       <div class="" style="width: 300px;">
-         <div id="ninninCarousel" class="carousel slide container" data-bs-ride="carousel" data-bs-interval="3000">
-           <div class="carousel-inner">
-             <div class="carousel-item active">
-               <img src="./img/kansya.jpg" class="d-block w-100" alt="画像1">
-             </div>
-             <div class="carousel-item">
-               <img src="./img/nihon.jpg" class="d-block w-100" alt="画像2">
-             </div>
-             <div class="carousel-item">
-               <img src="./img/rumine.jpg" class="d-block w-100" alt="画像3">
-             </div>
-           </div>
-           <button class="carousel-control-prev" type="button" data-bs-target="#ninninCarousel" data-bs-slide="prev">
-             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-             <span class="visually-hidden">前へ</span>
-           </button>
-           <button class="carousel-control-next" type="button" data-bs-target="#ninninCarousel" data-bs-slide="next">
-             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-             <span class="visually-hidden">次へ</span>
-           </button>
-         </div>
-       </div>
+      <div class="certificate-carousel">
+        <div class="carousel slide container" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/kansya.jpg" class="d-block w-100" alt="画像1">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/nihon.jpg" class="d-block w-100" alt="画像2">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/rumine.jpg" class="d-block w-100" alt="画像3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true">
+            </span>
+            <span class="visually-hidden">前へ</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true">
+            </span>
+            <span class="visually-hidden">次へ</span>
+          </button>
+        </div>
+      </div>
     </div>
   </section>
-
-
   <!-- SNS埋め込みセクション -->
   <section id="blog" class="py-5 bg-light">
     <div class="container">
       <h2 class="text-center mb-5">笑顔塾をもっと知る！</h2>
       <div class="row">
-
         <!-- Twitter埋め込み -->
         <div class="col-md-6 mb-4">
           <div class="card h-100">
             <div class="card-header">
-              <h5><i class="bi bi-twitter text-info"></i> Twitter</h5>
+              <h5>
+                <i class="bi bi-twitter text-info"></i>Twitter</h5>
             </div>
             <div class="card-body">
-              <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">【ハッピー笑顔塾】日本人の笑いのルーツ（神々と笑い）①<br>僕が笑顔を指導する上で一番苦労するのは、日本には笑いと笑顔の違いがないこと。そのルーツを探り・・<br><br>【笑顔の法則】　日本の古代神道　笑えばすべてが救われる<a href="https://t.co/9RbkQSWz2Q">https://t.co/9RbkQSWz2Q</a>【ハッピー笑顔塾】%E3%80%80笑いのルーツ <a href="https://t.co/wa4OscLVny">pic.twitter.com/wa4OscLVny</a></p>&mdash; 門川義彦（笑顔ｱﾒﾆﾃｨ研究所） (@kadokawa2525) <a href="https://twitter.com/kadokawa2525/status/1902168158875832766?ref_src=twsrc%5Etfw">March 19, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <blockquote class="twitter-tweet" data-media-max-width="560">
+                <p lang="ja" dir="ltr">【ハッピー笑顔塾】日本人の笑いのルーツ（神々と笑い）①
+                  <br>僕が笑顔を指導する上で一番苦労するのは、日本には笑いと笑顔の違いがないこと。そのルーツを探り・・
+                  <br>
+                  <br>【笑顔の法則】　日本の古代神道　笑えばすべてが救われる
+                  <a href="https://t.co/9RbkQSWz2Q">https://t.co/9RbkQSWz2Q</a>【ハッピー笑顔塾】%E3%80%80笑いのルーツ
+                  <a href="https://t.co/wa4OscLVny">pic.twitter.com/wa4OscLVny</a>
+                </p>— 門川義彦（笑顔ｱﾒﾆﾃｨ研究所） (@kadokawa2525)
+                <a href="https://twitter.com/kadokawa2525/status/1902168158875832766?ref_src=twsrc%5Etfw">March 19, 2025</a>
+              </blockquote>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>
         </div>
@@ -414,18 +347,16 @@
         <div class="col-md-6 mb-4">
           <div class="card h-100">
             <div class="card-header">
-              <h5><i class="bi bi-facebook text-info"></i> Facebook</h5>
+              <h5>
+                <i class="bi bi-facebook text-info"></i>Facebook</h5>
             </div>
             <div class="card-body">
               <div class="card h-100">
-                <div id="fb-root"></div>
-                <script async defer crossorigin="anonymous"
-                  src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v18.0" nonce="ABC123">
+                <div id="fb-root">
+                </div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v18.0" nonce="ABC123">
                 </script>
-                <div class="fb-post"
-                  data-href="https://www.facebook.com/permalink.php?story_fbid=1472553454135921&id=100041438419301"
-                  data-width="500"
-                  data-show-text="true">
+                <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=1472553454135921&id=100041438419301" data-width="500" data-show-text="true">
                 </div>
               </div>
             </div>
@@ -434,35 +365,26 @@
       </div>
     </div>
   </section>
-    <!-- https://ja.wikipedia.org/wiki/%E9%96%80%E5%B7%9D%E7%BE%A9%E5%BD%A6 -->
-
-
-
-  <!-- フッター -->
-   <!-- フッター -->
-   <style>
-    footer div p {
-        color: #fff;
-        text-decoration: none;
-    }
-   </style>
-
-  <footer class="py-4 text-white" style="background: linear-gradient(90deg,#F58529 0%,#DD2A7B 45%,#8134AF 100%);
-">
+  <!-- https://ja.wikipedia.org/wiki/%E9%96%80%E5%B7%9D%E7%BE%A9%E5%BD%A6 -->
+  <footer class="py-4 text-white">
     <div class="container text-center">
-      <img src="./img/egao.jpg" alt="企業ロゴ" style="height: 100px; width: 250px; margin-bottom: 20px;">
-      <p>&copy; 2025 株式会社 笑顔アメニティ研究所 All Rights Reserved.</p>
+      <img class="footer-logo" src="./img/egao.jpg" alt="企業ロゴ">
+      <p>© 2025 株式会社 笑顔アメニティ研究所 All Rights Reserved.</p>
       <div class="social-links mt-3">
-        <a href="https://x.com/kadokawa2525?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1902168158875832766%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=file%3A%2F%2F%2FUsers%2Fruu%2FWORKS%2Fkadokawa-hp%2Findex.htmlcontact" class="mx-2"><i class="bi bi-twitter"></i></a>
-        <a href="https://www.facebook.com/kadokawa" class="mx-2"><i class="bi bi-facebook"></i></a>
+        <a href="https://x.com/kadokawa2525?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1902168158875832766%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=file%3A%2F%2F%2FUsers%2Fruu%2FWORKS%2Fkadokawa-hp%2Findex.htmlcontact" class="mx-2">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/kadokawa" class="mx-2">
+          <i class="bi bi-facebook"></i>
+        </a>
       </div>
     </div>
   </footer>
-
-    <!-- Facebook SDK -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v18.0" nonce="random_nonce"></script>
+  <!-- Facebook SDK -->
+  <div id="fb-root">
+  </div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v18.0" nonce="random_nonce"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
+
 </html>

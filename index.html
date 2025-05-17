@@ -15,132 +15,52 @@
   />
 </head>
 <body>
-  <style>
-    body {
-        font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", sans-serif;
-        background-color: white;
-        overflow-y: scroll;
-        width: 100%;
-        color: rgb(68, 68, 68);
-        margin: 0px;
-    }
 
-    .text-kadokawa {
-      color: #730C0B !important;
-    }
-  </style>
-  <!-- ナビゲーションバー -->
-<!-- ================== Instagram風グラデーション・ヘッダーパーツ ================== -->
-<style>
-  /* --- Rainbow Sticky Navbar ------------------------------- */
-  .rainbow-nav{
-    background: linear-gradient(90deg,#F58529 0%,#DD2A7B 45%,#8134AF 100%);
-    border:none;
-    box-shadow:0 2px 6px rgba(0,0,0,.15);
-    z-index:1055;                /* Bootstrap のモーダルより下、ツールチップより上 */
-  }
-  
-  .rainbow-nav .navbar-brand,
-  .rainbow-nav .nav-link,
-  .rainbow-nav .nav-icon{
-    color:#fff;
-  }
-  
-  .rainbow-nav .nav-link{
-    font-weight:600;
-    letter-spacing:.04em;
-    position:relative;
-    transition:color .25s;
-  }
-  .rainbow-nav .nav-link::after{
-    content:'';
-    position:absolute;
-    left:0; right:0; bottom:0;
-    height:2px;
-    background:#fff;
-    transform:scaleX(0);
-    transition:transform .25s;
-  }
-  .rainbow-nav .nav-link:hover,
-  .rainbow-nav .nav-link:focus{
-    color:#fffbe6;
-  }
-  .rainbow-nav .nav-link:hover::after,
-  .rainbow-nav .nav-link.active::after{
-    transform:scaleX(1);
-  }
-  
-  /* ハンバーガーの色を白に */
-  .rainbow-nav .navbar-toggler{
-    border-color:rgba(255,255,255,.6);
-  }
-  .rainbow-nav .navbar-toggler-icon{
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='%23ffffff'><path stroke='rgba(0,0,0,0)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
-  }
-  
-  /* 連絡先アイコン共通 */
-  .nav-icon{
-    display:inline-flex; align-items:center; justify-content:center;
-    padding:0 .35rem;
-    font-size:1.25rem;
-    transition:opacity .25s;
-  }
-  .nav-icon:hover{ opacity:.8; }
-  
-  .brand-caption{
-    font-size:1.15rem;
-    font-weight:700;
-    line-height:1.2;
-  }
-  
-  /* モバイル時のナビ間隔を広めに */
-  @media (max-width:991.98px){
-    .rainbow-nav .nav-link{ padding:.75rem 1rem; }
-  }
-  </style>
-  <!-- ▼ Rainbow Sticky Navbar ここから ▼ -->
-  <nav class="navbar navbar-expand-lg navbar-light rainbow-nav sticky-top">
-    <div class="container-fluid">
-  
-      <!-- ブランド（ロゴ画像は従来のパスをそのまま利用） -->
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="./img/egao.jpg" alt="笑顔アメニティ研究所 ロゴ" height="52" class="me-2">
-        <span class="brand-caption d-none d-md-inline">笑顔アメニティ研究所</span>
-      </a>
-  
-      <!-- 連絡先アイコン（デスクトップのみ表示） -->
-      <div class="d-none d-lg-flex align-items-center me-3 contact-icons">
-        <a href="tel:+81123456789"    class="nav-icon"><i class="bi bi-telephone-fill"></i></a>
-        <a href="mailto:info@example.com" class="nav-icon"><i class="bi bi-envelope-fill"></i></a>
+<!-- ▼ Navbar ここから ▼ -->
+<nav class="navbar navbar-expand-lg navbar-light rainbow-nav sticky-top">
+  <div class="container-fluid">
+    <!-- ブランド（ロゴ画像と文言を含めた構造） -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <div class="logo-circle">
+        <img src="./img/egao_logo.jpg" alt="笑顔アメニティ研究所 ロゴ">
+      </div>
+      <div class="brand-text">
+        <div class="anniversary-text">おかげさまで35周年</div>
+        <div class="company-slogan">笑顔研修・笑顔セミナーの専門ラボ</div>
+        <div class="company-name">株式会社笑顔ｱﾒﾆﾃｨ研究所</div>
+      </div>
+      <!-- <span class="brand-caption d-none d-md-inline ms-2">笑顔アメニティ研究所</span> -->
+    </a>
+    <!-- 連絡先アイコン（デスクトップのみ表示） -->
+    <div class="d-none d-lg-flex align-items-center me-3 contact-icons">
+      <a href="tel:+81123456789"    class="nav-icon"><i class="bi bi-telephone-fill"></i></a>
+      <a href="mailto:info@example.com" class="nav-icon"><i class="bi bi-envelope-fill"></i></a>
+      <a href="https://maps.google.com/?q=東京駅" class="nav-icon"><i class="bi bi-geo-alt-fill"></i></a>
+    </div>
+    <!-- ハンバーガー -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarRainbow" aria-controls="navbarRainbow"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- ナビゲーションリンク -->
+    <div class="collapse navbar-collapse" id="navbarRainbow">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">ホーム</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">会社概要</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">お問い合わせ</a></li>
+      </ul>
+      <!-- 連絡先アイコン（モバイル表示時は折りたたみ領域内に） -->
+      <div class="d-lg-none mt-3 contact-icons">
+        <a href="tel:+81123456789"    class="nav-icon me-3"><i class="bi bi-telephone-fill"></i></a>
+        <a href="mailto:info@example.com" class="nav-icon me-3"><i class="bi bi-envelope-fill"></i></a>
         <a href="https://maps.google.com/?q=東京駅" class="nav-icon"><i class="bi bi-geo-alt-fill"></i></a>
       </div>
-  
-      <!-- ハンバーガー -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarRainbow" aria-controls="navbarRainbow"
-              aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <!-- ナビゲーションリンク -->
-      <div class="collapse navbar-collapse" id="navbarRainbow">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="index.html">ホーム</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">会社概要</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">お問い合わせ</a></li>
-        </ul>
-  
-        <!-- 連絡先アイコン（モバイル表示時は折りたたみ領域内に） -->
-        <div class="d-lg-none mt-3 contact-icons">
-          <a href="tel:+81123456789"    class="nav-icon me-3"><i class="bi bi-telephone-fill"></i></a>
-          <a href="mailto:info@example.com" class="nav-icon me-3"><i class="bi bi-envelope-fill"></i></a>
-          <a href="https://maps.google.com/?q=東京駅" class="nav-icon"><i class="bi bi-geo-alt-fill"></i></a>
-        </div>
-      </div>
-  
     </div>
-  </nav>
-  <!-- ▲ Rainbow Sticky Navbar ここまで ▲ -->
+  </div>
+</nav>
+  <!-- ▲ Navbar ここまで ▲ -->
+
   <!-- ヒーローセクション -->
   <header class="hero-section">
     <div class="container h-100">
@@ -164,15 +84,37 @@
     /* カスタムスタイル */
     body { font-family: 'Noto Sans JP', sans-serif; }
     .hero {
-      background: url('https://example.com/hero.jpg') center/cover no-repeat;
       color: #fff;
-      height: 80vh;
+    }
+
+    /* ヒーローセクション */
+    .hero-section {
+      height: 100vh;
+      min-height: 500px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url('./img/hero.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
       position: relative;
     }
+    
+    .hero-section h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .hero-section .lead {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
     .hero-overlay {
       position: absolute;
       top: 0; left: 0; width: 100%; height: 100%;
-      background-color: rgba(0,0,0,0.5);
     }
     .hero-content {
       position: relative;
@@ -189,7 +131,8 @@
       margin-top: 30px;
       color: #fff;
       border-radius: 70px;
-      background: linear-gradient(to left, #9a2f8d 0%, #c02853 30%, #d63b27 65%, #de6733 75%, #e17e3b 80%, #ecbb4c 100%);
+      background: #d19a61;
+      /* background: linear-gradient(to left, #9a2f8d 0%, #c02853 30%, #d63b27 65%, #de6733 75%, #e17e3b 80%, #ecbb4c 100%); */
       -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
       width: 354.188px;
@@ -202,11 +145,6 @@
         padding: 1.65rem 5.1rem 1.65rem 5.1rem;
         color: #fff;
     }
-    /* <div class="page1-3">
-      <a href="index.html#period-3" class="btn btn-c"><span>お問い合わせはこちら</span></a>
-      </div> */
-    /*  */
-
   </style>
 
 <!-- ここを埋めたら勝ち -->
