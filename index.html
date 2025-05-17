@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,701 +13,578 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- font awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-
 </head>
+
 <body>
-
-<!-- ▼ Navbar ここから ▼ -->
-<nav class="navbar navbar-expand-lg navbar-light rainbow-nav sticky-top">
-  <div class="container-fluid">
-    <!-- ブランド（ロゴ画像と文言を含めた構造） -->
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <div class="logo-circle">
-        <img src="./img/egao_logo.jpg" alt="笑顔アメニティ研究所 ロゴ">
+  <!-- ▼ Navbar ここから ▼ -->
+  <nav class="navbar navbar-expand-lg navbar-light rainbow-nav sticky-top">
+    <div class="container-fluid">
+      <!-- ブランド（ロゴ画像と文言を含めた構造） -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <div class="logo-circle">
+          <img src="./img/egao_logo.jpg" alt="笑顔アメニティ研究所 ロゴ">
+        </div>
+        <div class="brand-text">
+          <div class="anniversary-text">おかげさまで35周年</div>
+          <div class="company-slogan">笑顔研修・笑顔セミナーの専門ラボ</div>
+          <div class="company-name">株式会社笑顔ｱﾒﾆﾃｨ研究所</div>
+        </div>
+        <!-- <span class="brand-caption d-none d-md-inline ms-2">笑顔アメニティ研究所</span> -->
+      </a>
+      <!-- 連絡先アイコン（デスクトップのみ表示） -->
+      <div class="d-none d-lg-flex align-items-center me-3 contact-icons">
+        <a href="tel:+81123456789" class="nav-icon">
+          <i class="bi bi-telephone-fill"></i>
+        </a>
+        <a href="mailto:info@example.com" class="nav-icon">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+        <a href="https://maps.google.com/?q=%E6%9D%B1%E4%BA%AC%E9%A7%85" class="nav-icon">
+          <i class="bi bi-geo-alt-fill"></i>
+        </a>
       </div>
-      <div class="brand-text">
-        <div class="anniversary-text">おかげさまで35周年</div>
-        <div class="company-slogan">笑顔研修・笑顔セミナーの専門ラボ</div>
-        <div class="company-name">株式会社笑顔ｱﾒﾆﾃｨ研究所</div>
+      <!-- ハンバーガー -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRainbow" aria-controls="navbarRainbow" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+      <!-- ナビゲーションリンク -->
+      <div class="collapse navbar-collapse" id="navbarRainbow">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">会社概要</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">お問い合わせ</a>
+          </li>
+        </ul>
+        <!-- 連絡先アイコン（モバイル表示時は折りたたみ領域内に） -->
+        <div class="d-lg-none mt-3 contact-icons">
+          <a href="tel:+81123456789" class="nav-icon me-3">
+            <i class="bi bi-telephone-fill"></i>
+          </a>
+          <a href="mailto:info@example.com" class="nav-icon me-3">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+          <a href="https://maps.google.com/?q=%E6%9D%B1%E4%BA%AC%E9%A7%85" class="nav-icon">
+            <i class="bi bi-geo-alt-fill"></i>
+          </a>
+        </div>
       </div>
-      <!-- <span class="brand-caption d-none d-md-inline ms-2">笑顔アメニティ研究所</span> -->
-    </a>
-    <!-- 連絡先アイコン（デスクトップのみ表示） -->
-    <div class="d-none d-lg-flex align-items-center me-3 contact-icons">
-      <a href="tel:+81123456789"    class="nav-icon"><i class="bi bi-telephone-fill"></i></a>
-      <a href="mailto:info@example.com" class="nav-icon"><i class="bi bi-envelope-fill"></i></a>
-      <a href="https://maps.google.com/?q=東京駅" class="nav-icon"><i class="bi bi-geo-alt-fill"></i></a>
     </div>
-    <!-- ハンバーガー -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarRainbow" aria-controls="navbarRainbow"
-            aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- ナビゲーションリンク -->
-    <div class="collapse navbar-collapse" id="navbarRainbow">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link active" href="index.html">ホーム</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">会社概要</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">お問い合わせ</a></li>
-      </ul>
-      <!-- 連絡先アイコン（モバイル表示時は折りたたみ領域内に） -->
-      <div class="d-lg-none mt-3 contact-icons">
-        <a href="tel:+81123456789"    class="nav-icon me-3"><i class="bi bi-telephone-fill"></i></a>
-        <a href="mailto:info@example.com" class="nav-icon me-3"><i class="bi bi-envelope-fill"></i></a>
-        <a href="https://maps.google.com/?q=東京駅" class="nav-icon"><i class="bi bi-geo-alt-fill"></i></a>
-      </div>
-    </div>
-  </div>
-</nav>
+  </nav>
   <!-- ▲ Navbar ここまで ▲ -->
-
   <!-- ヒーローセクション -->
   <header class="hero-section">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
           <h1>笑顔の数だけ幸福になる</h1>
-          <h3></h3>
+          <h3>
+          </h3>
           <h3>笑顔で商売繁盛</h3>
           <h3>笑顔で人間関係づくり</h3>
           <h3>笑顔で健康づくり</h3>
           <p class="lead"></p>
-            <!-- <a href="#contact" class="btn btn-primary btn-lg">お問い合わせ</a> -->
-            <div class="page1-3">
-              <a href="#contact" class="btn btn-c"><span>お問い合わせはこちら</span></a>
-            </div>
+          <!-- <a href="#contact" class="btn btn-primary btn-lg">お問い合わせ</a> -->
+          <div class="page1-3">
+            <a href="#contact" class="btn btn-c">
+              <span>お問い合わせはこちら</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </header>
-
-<!-- よくある悩み -->
-<div class="container">
-
-<!-- ──────────────  よくある経営者の悩み  ────────────── -->
-<section id="pain-points" class="py-5">
+  <!-- よくある悩み -->
   <div class="container">
-    <h2 class="mb-4 text-center">よくある <span class="text-kadokawa">経営者の悩み</span></h2>
-
-    <!-- 1列ずつカードで並べる -->
-    <div class="row g-4">
-      <!-- 悩み① -->
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body d-flex">
-            <i class="fa-solid fa-check-circle text-kadokawa fs-3 me-3 mt-1"></i>
-            <div>
-              <h5 class="card-title mb-1">社員のモチベーションが低い / 離職率が高い</h5>
-              <p class="card-text small mb-0">
-                トップが自然な笑顔でポジティブな空気を作ることで、<br>
-                <strong>エンゲージメント向上・離職防止</strong>を実現します。
-              </p>
+    <!-- ──────────────  よくある経営者の悩み  ────────────── -->
+    <section id="pain-points" class="py-5">
+      <div class="container">
+        <h2 class="mb-4 text-center">よくある
+          <span class="text-kadokawa">経営者の悩み</span>
+        </h2>
+        <!-- 1列ずつカードで並べる -->
+        <div class="row g-4">
+          <!-- 悩み① -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body d-flex">
+                <i class="fa-solid fa-check-circle text-kadokawa fs-3 me-3 mt-1"></i>
+                <div>
+                  <h5 class="card-title mb-1">社員のモチベーションが低い / 離職率が高い</h5>
+                  <p class="card-text small mb-0">トップが自然な笑顔でポジティブな空気を作ることで、
+                    <br>
+                    <strong>エンゲージメント向上・離職防止</strong>を実現します。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 悩み② -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body d-flex">
+                <i class="fa-solid fa-check-circle text-kadokawa fs-3 me-3 mt-1"></i>
+                <div>
+                  <h5 class="card-title mb-1">顧客との信頼関係が築けない</h5>
+                  <p class="card-text small mb-0">アイコンタクト×笑顔を体得し、
+                    <br>
+                    <strong>リピート率・紹介率</strong>を高めます。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 悩み③ -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body d-flex">
+                <i class="fa-solid fa-check-circle text-kadokawa fs-3 me-3 mt-1"></i>
+                <div>
+                  <h5 class="card-title mb-1">組織に閉塞感がありイノベーションが起きない</h5>
+                  <p class="card-text small mb-0">心理的安全性が高まり、
+                    <br>
+                    <strong>アイデア創出と建設的対話</strong>が活性化します。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 悩み④ -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body d-flex">
+                <i class="fa-solid fa-check-circle text-kadokawa fs-3 me-3 mt-1"></i>
+                <div>
+                  <h5 class="card-title mb-1">経営者自身のストレス・健康リスク</h5>
+                  <p class="card-text small mb-0">呼吸法や笑顔体操で自律神経を整え、
+                    <br>
+                    <strong>ストレス耐性UP & 健康維持</strong>に貢献します。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 悩み⑤ -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body d-flex">
+                <i class="fa-solid fa-check-circle text-kadokawa fs-3 me-3 mt-1"></i>
+                <div>
+                  <h5 class="card-title mb-1">プレゼン時に表情が硬くなる</h5>
+                  <p class="card-text small mb-0">「自然な笑顔」を再現できる鏡トレーニングで、
+                    <br>
+                    <strong>説得力とブランドイメージ</strong>を向上させます。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 悩み⑥ -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body d-flex">
+                <i class="fa-solid fa-check-circle text-kadokawa fs-3 me-3 mt-1"></i>
+                <div>
+                  <h5 class="card-title mb-1">社内コミュニケーションの停滞</h5>
+                  <p class="card-text small mb-0">“アイコンタクト → スマイル → 言葉”の順序を徹底し、
+                    <br>
+                    <strong>報連相の質</strong>とスピードを改善します。</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <!-- /.row -->
       </div>
-
-      <!-- 悩み② -->
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body d-flex">
-            <i class="fa-solid fa-check-circle text-kadokawa fs-3 me-3 mt-1"></i>
-            <div>
-              <h5 class="card-title mb-1">顧客との信頼関係が築けない</h5>
-              <p class="card-text small mb-0">
-                アイコンタクト×笑顔を体得し、<br>
-                <strong>リピート率・紹介率</strong>を高めます。
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 悩み③ -->
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body d-flex">
-            <i class="fa-solid fa-check-circle text-kadokawa fs-3 me-3 mt-1"></i>
-            <div>
-              <h5 class="card-title mb-1">組織に閉塞感がありイノベーションが起きない</h5>
-              <p class="card-text small mb-0">
-                心理的安全性が高まり、<br>
-                <strong>アイデア創出と建設的対話</strong>が活性化します。
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 悩み④ -->
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body d-flex">
-            <i class="fa-solid fa-check-circle text-kadokawa fs-3 me-3 mt-1"></i>
-            <div>
-              <h5 class="card-title mb-1">経営者自身のストレス・健康リスク</h5>
-              <p class="card-text small mb-0">
-                呼吸法や笑顔体操で自律神経を整え、<br>
-                <strong>ストレス耐性UP &amp; 健康維持</strong>に貢献します。
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 悩み⑤ -->
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body d-flex">
-            <i class="fa-solid fa-check-circle text-kadokawa fs-3 me-3 mt-1"></i>
-            <div>
-              <h5 class="card-title mb-1">プレゼン時に表情が硬くなる</h5>
-              <p class="card-text small mb-0">
-                「自然な笑顔」を再現できる鏡トレーニングで、<br>
-                <strong>説得力とブランドイメージ</strong>を向上させます。
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 悩み⑥ -->
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body d-flex">
-            <i class="fa-solid fa-check-circle text-kadokawa fs-3 me-3 mt-1"></i>
-            <div>
-              <h5 class="card-title mb-1">社内コミュニケーションの停滞</h5>
-              <p class="card-text small mb-0">
-                “アイコンタクト → スマイル → 言葉”の順序を徹底し、<br>
-                <strong>報連相の質</strong>とスピードを改善します。
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</section>
-
-
-<!-- 事業紹介 -->
-
-<section class="py-5" id="about-happy-egao">
-  <div class="container">
-
-    <!-- 見出し -->
-    <h2 class="text-center fw-bold mb-4">
-      <span class="text-kadokawa">ハッピー笑顔塾</span> は<br class="d-md-none">
-      笑顔の力を学びともに成長する塾です
-    </h2>
-
-    <!-- 事業内容　説明文３段 -->
-    <!-- <div class="row justify-content-center mb-5">
+      <!-- /.container -->
+    </section>
+    <!-- 事業紹介 -->
+    <section class="py-5" id="about-happy-egao">
+      <div class="container">
+        <!-- 見出し -->
+        <h2 class="text-center fw-bold mb-4">
+          <span class="text-kadokawa">ハッピー笑顔塾</span>は
+          <br class="d-md-none">笑顔の力を学びともに成長する塾です</h2>
+        <!-- 事業内容　説明文３段 -->
+        <!-- <div class="row justify-content-center mb-5">
       <div class="col-lg-10">
         <p class="lead">事業内容説明事業内容説明事業内容説明事業内容説明</p>
         <p>事業内容説明事業内容説明事業内容説明事業内容説明</p>
         <p>事業内容説明事業内容説明事業内容説明事業内容説明</p>
       </div>
     </div> -->
-
-    <!-- 代表メッセージ -->
-    <div class="row align-items-center g-4">
-      <!-- 画像 -->
-      <div class="col-md-5 text-center">
-        <img src="./img/daihyo.jpeg" alt="代表写真" class="img-fluid rounded shadow-sm">
-      </div>
-
-      <!-- メッセージ -->
-      <div class="col-md-7">
-        <div class="card border-0 shadow-sm h-100">
-          <div class="card-body">
-            <h3 class="card-title text-kadokawa fw-bold mb-3">代表メッセージ</h3>
-
-            <p class="mb-2">笑いと笑顔は違います。笑いは本能ですが、笑顔は<strong>技術</strong>です。</p>
-            <p class="mb-2">笑顔の知識と技術を学び「笑顔のチカラ」を身につければ、健康と幸せをつかめます。売り上げもぐんぐん伸びます。</p>
-            <p class="mb-0">正しい笑顔を習得して、ビジネスチャンスを広げ、仕事を通して幸せを掴みましょう。</p>
-            <h4 class="mb-2">儲かるから笑顔になるのでしょうか？ <strong>いいえ、笑顔だから儲かる</strong>んです。</h4>
+        <!-- 代表メッセージ -->
+        <div class="row align-items-center g-4">
+          <!-- 画像 -->
+          <div class="col-md-5 text-center">
+            <img src="./img/daihyo.jpeg" alt="代表写真" class="img-fluid rounded shadow-sm">
           </div>
-        </div>
-      </div>
-    </div>
-
-  </div><!-- /.container -->
-</section>
-
-
-
-<!-- why me -->
-<section class="py-5" id="why-me">
-  <div class="container">
-
-    <!-- 見出し -->
-    <h2 class="text-center fw-bold mb-5">
-      <i class="fa-solid fa-user-tie text-kadokawa me-2"></i>
-      講師は<span class="text-kadokawa">名だたる大企業</span>を直接指導してきたプロ
-    </h2>
-
-    <div class="row align-items-center g-4">
-
-      <!-- プロフィール（左） -->
-      <div class="col-md-8 order-md-1">
-        <div class="card border-0 shadow-sm h-100">
-          <div class="card-body">
-            <p class="mb-2">
-              大手アパレルで店長・営業本部販売ディレクター・教育事業部ディレクターなど15年勤務後、
-              1989年に世界初の<strong>“笑顔コンサルタント”</strong>として独立。
-            </p>
-            <p class="mb-2">
-              小売・量販・運輸・製造・街づくりなど<strong>800社・延べ10万人以上</strong>を指導し、CS活動と笑顔指導の功績で「功労賞」を受賞。
-              2021年には<strong>ルミネ</strong>などでも研修を担当。
-            </p>
-            <p class="mb-2">
-              <strong>立教大学大学院ビジネスデザイン科「笑顔学」講師</strong>としても登壇し、
-              笑顔づくりを「数字と技術」で再現する仕組み化を得意とする。
-            </p>
-            <p class="mb-0">
-              企業の接客力・組織活性化・売上向上を実現する<span class="fw-bold text-kadokawa">日本随一のエキスパート</span>です。
-            </p>
-            <p><a href="https://ja.wikipedia.org/wiki/%E9%96%80%E5%B7%9D%E7%BE%A9%E5%BD%A6">wikipedia</a></p>
-          </div><!-- /.card-body -->
-        </div><!-- /.card -->
-      </div><!-- /.col -->
-
-      <!-- 画像（右） -->
-      <div class="col-md-4 text-center order-md-2">
-        <img src="./img/daihyo2.webp" alt="講師写真" class="img-fluid rounded shadow-sm">
-      </div>
-
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</section>
-
-<!-- 事業説明 -->
-<section class="plan-setsumei py-5">
-  <div class="container">
-    <div class="row g-4">
-      <!-- 入門編 -->
-      <div class="col-md-6">
-        <div class="course-card border-0 h-100 shadow-sm position-relative course-mid">
-          <!-- 円形バッジ -->
-          <!-- <span class="badge-round">受講目安<br><strong>2ヶ月</strong></span> -->
-          <div class="card-header text-center fw-bold fs-4 text-white bg-mid">入門編</div>
-          <div class="card-body p-5">
-            <!-- 対象 -->
-            <h6 class="title">対象</h6>
-            <ul class="mb-4">
-              <li>経営者</li>
-              <li>笑顔リーダー</li>
-              <li>全スタッフ</li>
-            </ul>
-            <!-- 内容 -->
-            <h6 class="title">内容</h6>
-            <ul class="mb-4">
-              <li>わりばしストレッチ</li>
-              <li>スマイル握手</li>
-              <li>ハッピー体操</li>
-              <li>笑顔の力(日本人は笑顔が苦手)</li>
-              <li>笑顔は技術</li>
-              <li>外面で損しない方法、笑顔づくりの６箇条</li>
-              アイコンタクト、割り箸ストレッチ、ハッピー体操、笑顔呼吸、笑顔のキャッチボール
-            </ul>
-            <!-- 説明 -->
-            <h6 class="title">効果</h6>
-            <ul class="check-list">
-              <li>人間関係</li>
-              <li>健康づくり</li>
-              <li>商売繁盛</li>
-            </ul>
-          </div><!-- /.card-body -->
-        </div><!-- /.course-card -->
-      </div><!-- /.col -->
-
-      <!-- 実践編 -->
-      <div class="col-md-6">
-        <div class="course-card border-0 h-100 shadow-sm position-relative course-adv">
-          <!-- 円形バッジ -->
-          <!-- <span class="badge-round">受講目安<br><strong>2ヶ月</strong></span> -->
-          <div class="card-header text-center fw-bold fs-4 text-white bg-adv">実践編</div>
-          <div class="card-body p-5">
-            <!-- 対象 -->
-            <h6 class="title">対象</h6>
-            <ul class="mb-4">
-              <li>「ハッピー笑顔塾入門編」を体験した方が対象</li>
-            </ul>
-            <!-- 内容 -->
-            <h6 class="title">内容</h6>
-            <ul class="mb-4">
-              <span>お客様の企業に訪問授業</span>
-              <li>笑顔なき企業は滅びる、AI時代は笑顔がオアシス</li>
-              <li>笑顔の仕組み化</li>
-              <li>環境ベーシック・アイコンタクト・笑顔づくり・笑顔のシナリオ化・フォーメーション・効率</li>
-              <li>門川式自然な笑顔の作り方、笑顔レッスン</li>
-            </ul>
-            <!-- 目指せる姿 -->
-            <h6 class="title">効果</h6>
-            <ul class="check-list">
-              <li>笑顔のサービス風土作り</li>
-              <li>CS度(顧客満足度)の向上</li>
-            </ul>
-          </div><!-- /.card-body -->
-        </div><!-- /.course-card -->
-      </div><!-- /.col -->
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</section>
-
-  
-  <!-- セミナー詳細 -->
-<section class="price-section py-5">
-  <div class="container syousai">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 col-md-10">
-
-        <div class="card shadow-sm border-0">
-          <div class="card-body">
-
-            <!-- 見出し -->
-            <h2 class="card-title text-center fw-bold mb-4">
-              <i class="fa-solid fa-circle-info text-kadokawa me-2"></i>ハッピー笑顔塾詳細
-            </h2>
-
-            <!-- 会費 -->
-            <p class="display-6 text-center text-danger fw-bold mb-4">
-              会費 <span class="h2 fw-normal">11,000円</span>
-              <small class="text-muted">（税込）</small>
-            </p>
-
-            <!-- 詳細リスト -->
-            <ul class="list-unstyled fs-5">
-              <li class="mb-2">
-                <i class="fa-regular fa-calendar-check text-kadokawa me-2"></i>
-                開催日：<strong>月2日開催(8日〜25日)</strong>
-              </li>
-              <li class="mb-2">
-                <i class="fa-solid fa-location-dot text-kadokawa me-2"></i>
-                場所：株式会社笑顔アメニティ研究所<br class="d-md-none">
-                〒111-0034 東京都台東区雷門1-14-7-1101
-              </li>
-              <!-- Google Map：株式会社 笑顔アメニティ研究所 -->
-              <style>
-                .map-responsive {
-                  position: relative;
-                  padding-bottom: 56.25%; /* 16:9 */
-                  height: 0;
-                  overflow: hidden;
-                }
-                .map-responsive iframe {
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  width: 100%;
-                  height: 100%;
-                  border: 0;
-                }
-              </style>
-              
-              <div class="map-responsive">
-                <iframe
-                  src="https://www.google.com/maps?q=35.71101,139.793781&hl=ja&z=18&output=embed"
-                  allowfullscreen
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+          <!-- メッセージ -->
+          <div class="col-md-7">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h3 class="card-title text-kadokawa fw-bold mb-3">代表メッセージ</h3>
+                <p class="mb-2">笑いと笑顔は違います。笑いは本能ですが、笑顔は
+                  <strong>技術</strong>です。</p>
+                <p class="mb-2">笑顔の知識と技術を学び「笑顔のチカラ」を身につければ、健康と幸せをつかめます。売り上げもぐんぐん伸びます。</p>
+                <p class="mb-0">正しい笑顔を習得して、ビジネスチャンスを広げ、仕事を通して幸せを掴みましょう。</p>
+                <h4 class="mb-2">儲かるから笑顔になるのでしょうか？
+                  <strong>いいえ、笑顔だから儲かる</strong>んです。</h4>
               </div>
-              <li class="mb-2">
-                <i class="fa-solid fa-chalkboard-user text-kadokawa me-2"></i>
-                内容：入門編2時間 <span class="text-muted">(10:00-12:00)</span>、ランチ・シェア会2時間
-                <br>・浅草幸せパワースポット巡り(任意参加) 2時間・著者サイン入り本プレゼント・懇親会(別途食事料金いただきます)
-              </li>
-              <li>
-                <i class="fa-solid fa-users text-kadokawa me-2"></i>
-                参加人数：<strong>3名（少人数制）</strong>
-              </li>
-            </ul>
-
-          </div><!-- /.card-body -->
-        </div><!-- /.card -->
-
-      </div><!-- /.col -->
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</section>
-
-<!-- 任意：わずかな微調整 -->
-<style>
-  .price-section .card-body { line-height: 1.8; }
-  .price-section .display-6 { font-size: 2.4rem; }
-</style>
-
-
-  <!-- お問い合わせセクション -->
-  <style>
-    #contact {
-      background-color: #FFFFFF;
-    }
-  </style>
-  <section id="contact" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-5">お問い合わせ</h2>
-      <div class="row">
-        <!-- フォーム -->
-        <!-- <div class="col-lg-6 mb-4"> -->
-<!-- tag バッジの共通スタイル -->
-<style>
-  .tag {
-    display:inline-block; margin-left:.5em; padding:.1em .4em;
-    font-size:12px; font-weight:700; color:#fff; background:#C6B78D;
-    border-radius:.25rem;
-  }
-</style>
-
-<form action="https://formspree.io/f/xeogqgry" method="POST">
-  <!-- 会社名 -->
-  <div class="mb-3">
-    <label for="company" class="form-label fw-bold fs-6 text-dark">
-      会社名<span class="tag">必須</span>
-    </label>
-    <input id="company" name="company" type="text"
-           class="form-control" placeholder="会社名" required>
-  </div>
-
-  <!-- 氏名 -->
-  <div class="mb-3">
-    <label for="name" class="form-label fw-bold fs-6 text-dark">
-      氏名<span class="tag">必須</span>
-    </label>
-    <input id="name" name="name" type="text"
-           class="form-control" placeholder="氏名" required>
-  </div>
-
-  <!-- 氏名(カナ) -->
-  <div class="mb-3">
-    <label for="nameKana" class="form-label fw-bold fs-6 text-dark">
-      氏名(カナ)<span class="tag">必須</span>
-    </label>
-    <input id="nameKana" name="name_kana" type="text"
-           class="form-control" placeholder="氏名(カナ)" required>
-  </div>
-
-  <!-- メールアドレス -->
-  <div class="mb-3">
-    <label for="email" class="form-label fw-bold fs-6 text-dark">
-      メールアドレス<span class="tag">必須</span>
-    </label>
-    <input id="email" name="email" type="email"
-           class="form-control" placeholder="メールアドレス" required>
-  </div>
-
-  <!-- 電話番号 -->
-  <div class="mb-3">
-    <label for="phone" class="form-label fw-bold fs-6 text-dark">
-      電話番号 ※ハイフンを除く<span class="tag">必須</span>
-    </label>
-    <input id="phone" name="phone" type="tel"
-           class="form-control" placeholder="電話番号" required>
-  </div>
-
-  <!-- 件名 -->
-  <div class="mb-3">
-    <label for="subject" class="form-label fw-bold fs-6 text-dark">
-      件名
-    </label>
-    <input id="subject" name="_subject" type="text"
-           class="form-control" placeholder="件名" required>
-  </div>
-
-  <!-- ご連絡方法 -->
-  <div class="mb-3">
-    <span class="d-block fw-bold fs-6 text-dark mb-1">
-      ご連絡方法<span class="tag">必須</span>
-    </span>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" id="cmail"
-             name="contact_method" value="メール" checked>
-      <label class="form-check-label" for="cmail">メール</label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" id="cphone"
-             name="contact_method" value="電話">
-      <label class="form-check-label" for="cphone">電話</label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" id="ceither"
-             name="contact_method" value="どちらでも">
-      <label class="form-check-label" for="ceither">どちらでも</label>
-    </div>
-  </div>
-
-  <!-- お問い合わせ内容 -->
-  <div class="mb-3">
-    <label for="message" class="form-label fw-bold fs-6 text-dark">
-      お問い合わせ内容<span class="tag">必須</span>
-    </label>
-    <textarea id="message" name="message" class="form-control"
-              rows="5" placeholder="お問い合わせの内容" required></textarea>
-  </div>
-
-  <!-- サンクスページへ遷移したい場合（任意） -->
-  <!-- <input type="hidden" name="_next" value="/thanks.html"> -->
-
-  <button type="submit" class="btn btn-primary"
-          style="background:#C6B78D;border:none;">送信する</button>
-</form>
-
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <style>
-    div.page7 {
-        text-align: center;
-        background-color: #FFF3E3;
-        padding: 70px 0px 70px 0;
-    }
-    div.page7 p.tel-number {
-        color: #222;
-        font-size: 30px;
-        font-weight: 700;
-    }
-
-    .col a {
-      text-decoration: none;
-      color: #222;
-    }
-  </style>
-  
-    <div class="m-5">
-      <div class="page7">
-        <h3 class="telcon">お電話でのお問い合わせはこちら</h3>
-        <p class="tel-number">03-3843-4566</p>
-        <p>(平日 10:00-17:00)</p>
-      </div>
-    </div>
-
-    <section>
-      <div class="container py-5">
-
-        <!-- 横並びさせる行。g-4 でカード間 1.5rem の余白 -->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
-    
-          <!-- ===== どんどん儲かる ===== -->
-          <div class="col">
-            <div class="card h-100 shadow-sm book-card">
-              <a href="https://www.amazon.co.jp/%E3%81%A9%E3%82%93%E3%81%A9%E3%82%93%E5%84%B2%E3%81%8B%E3%82%8B%E3%80%8C%E7%AC%91%E9%A1%94%E3%80%8D%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF-%E9%96%80%E5%B7%9D-%E7%BE%A9%E5%BD%A6/dp/4478013411/ref=sr_1_1?ie=UTF8&qid=1289477071&sr=8-1">
-                <img src="img/dondon.webp" class="card-img-top" alt="表紙1">
-                <div class="card-body">
-                  <p class="card-text small">
-                    儲かるから笑顔になる?いや、笑顔だから儲かるんです!防犯カメラより笑顔が効く!笑顔で売上げ250%アップ！30年にわたる笑顔指導で実証された、笑顔のチカラと技術を伝えます。
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-    
-          <!-- ===== 作る ===== -->
-          <div class="col">
-            <div class="card h-100 shadow-sm book-card">
-              <a href="https://www.amazon.co.jp/gp/product/4569701051/ref=pe_2102_8996602_pe_snp_051">
-                <img src="img/tukuru.webp" class="card-img-top" alt="表紙2">
-                <div class="card-body">
-                  <p class="card-text small">
-                    自分の笑顔に自信がありますか?自然な笑顔ができれば、周りの人とのコミュニケーションが魔法のようにうまくいきます。そして、人やお金、そして運が引き付けられるのです。
-                  </p>
-                </div>
-            </a>
-            </div>
-          </div>
-    
-          <!-- ===== 頭 ===== -->
-          <div class="col">
-            <div class="card h-100 shadow-sm book-card">
-              <a href="https://www.amazon.co.jp/gp/product/447873335X/sr=11-1/qid=1162801496/ref=sr_11_1/503-4205780-5285520">
-                <img src="img/atama.webp" class="card-img-top" alt="表紙3">
-                <div class="card-body">
-                  <p class="card-text small">
-                    笑顔のチカラは絶大です。でも笑顔の使い方を間違えると人を傷つけたり、自分の心を隠す最大の武器にもなるんです。この本に書かれた使用上の注意をよく読んでお使い下さい。
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-    
-          <!-- ===== 法則 ===== -->
-          <div class="col">
-            <div class="card h-100 shadow-sm book-card">
-              <a href="https://www.amazon.co.jp/%E5%A3%B2%E4%B8%8A%E3%81%92%E3%81%8C%E3%81%90%E3%82%93%E3%81%90%E3%82%93%E4%BC%B8%E3%81%B3%E3%82%8B%E3%80%8C%E7%AC%91%E9%A1%94%E3%80%8D%E3%81%AE%E6%B3%95%E5%89%87-%E3%80%8C%E7%AC%91%E9%A1%94%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB%E3%82%BF%E3%83%B3%E3%83%88%E3%80%8D%E3%81%8C%E6%95%99%E3%81%88%E3%82%8B%E5%84%B2%E3%81%8B%E3%82%8B%E3%81%8A%E5%BA%97%E3%81%AE%E7%A7%98%E5%AF%86-%E9%96%80%E5%B7%9D-%E7%BE%A9%E5%BD%A6/dp/4478560501/ref=pd_sim_b_3">
-                <img src="img/housoku.webp" class="card-img-top" alt="表紙4">
-                <div class="card-body">
-                  <p class="card-text small">
-                    あなただけに教える笑顔マジックの秘密とは!? ◉半年で売上が2.5倍! ◉購入単価が大幅アップ! ◉クレームが３分の１に減少! ◉万引きが激減! ◉入店客数が２倍に! その秘密とは？
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-    
-          <!-- ===== 力 ===== -->
-          <div class="col">
-            <div class="card h-100 shadow-sm book-card">
-              <a href="https://www.amazon.co.jp/%E7%AC%91%E9%A1%94%E3%81%AE%E3%83%81%E3%82%AB%E3%83%A9-%E9%96%80%E5%B7%9D-%E7%BE%A9%E5%BD%A6/dp/4877311521/ref=sr_1_6?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=Y39IZ0Z7LCB8&dib=eyJ2IjoiMSJ9.CJv-cc0HLDUEBbeKJyCJxFPvqH2vr7cPxexDS146cNMhq_yu0_hcLk4UN_WHQIiVXLgVXN3nVX4m48b_T_GlUK5NupQtP0p45C9lYNgXNvqKehHzVqDDn3A40p9xQTFiUXSwmQWVabb_Ovix9ZHqYADBTNUYjgr9HpB9McKUQ7o.wko05u4AHc6DdPYx5GdRrt68fWUbKwRx3wdFXEzdgjE&dib_tag=se&keywords=%E9%96%80%E5%B7%9D%E7%BE%A9%E5%BD%A6&qid=1746709993&sprefix=%E9%96%80%E5%B7%9D%E7%BE%A9%E5%BD%A6%2Caps%2C203&sr=8-6">
-                <img src="img/chikara.webp" class="card-img-top" alt="表紙4">
-                <div class="card-body">
-                  <p class="card-text small">
-                    TVマスコミも注目！ 人生をハッピーにする笑顔セラピーのすすめ。 あなたの知らない笑顔パワーの秘密！◉家族、仕事、恋愛、友だち、笑顔はあらゆる人間関係の万能薬                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-    
-          <!-- ===== 呼吸 ===== -->
-          <div class="col">
-            <div class="card h-100 shadow-sm book-card">
-              <a href="https://www.amazon.co.jp/%E8%A1%A8%E6%83%85%E3%81%A7%E4%BD%93%E3%81%8C%E5%A4%89%E3%82%8F%E3%82%8B-%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E7%AC%91%E9%A1%94%E5%91%BC%E5%90%B8-%E9%96%80%E5%B7%9D-%E7%BE%A9%E5%BD%A6/dp/4862806902">
-                <img src="img/kokyu.jpg" class="card-img-top" alt="表紙5">
-                <div class="card-body">
-                  <p class="card-text small">
-                    「笑顔」は、人とのコミュニケーションにとても重要。そして、健康にも影響を与えます!笑顔になる=口角を上げる、と鼻が開く。鼻が開くと新鮮な空気を鼻呼吸で体に取り込めます。
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-    
-        </div><!-- /.row -->
-      </div><!-- /.container -->
+      <!-- /.container -->
     </section>
-</div>
-
-<!-- ここを埋めたら勝ち -->
-
+    <!-- why me -->
+    <section class="py-5" id="why-me">
+      <div class="container">
+        <!-- 見出し -->
+        <h2 class="text-center fw-bold mb-5">
+          <i class="fa-solid fa-user-tie text-kadokawa me-2"></i>講師は
+          <span class="text-kadokawa">名だたる大企業</span>を直接指導してきたプロ</h2>
+        <div class="row align-items-center g-4">
+          <!-- プロフィール（左） -->
+          <div class="col-md-8 order-md-1">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <p class="mb-2">大手アパレルで店長・営業本部販売ディレクター・教育事業部ディレクターなど15年勤務後、 1989年に世界初の
+                  <strong>“笑顔コンサルタント”</strong>として独立。</p>
+                <p class="mb-2">小売・量販・運輸・製造・街づくりなど
+                  <strong>800社・延べ10万人以上</strong>を指導し、CS活動と笑顔指導の功績で「功労賞」を受賞。 2021年には
+                  <strong>ルミネ</strong>などでも研修を担当。</p>
+                <p class="mb-2">
+                  <strong>立教大学大学院ビジネスデザイン科「笑顔学」講師</strong>としても登壇し、 笑顔づくりを「数字と技術」で再現する仕組み化を得意とする。</p>
+                <p class="mb-0">企業の接客力・組織活性化・売上向上を実現する
+                  <span class="fw-bold text-kadokawa">日本随一のエキスパート</span>です。</p>
+                <p>
+                  <a href="https://ja.wikipedia.org/wiki/%E9%96%80%E5%B7%9D%E7%BE%A9%E5%BD%A6">wikipedia</a>
+                </p>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <!-- 画像（右） -->
+          <div class="col-md-4 text-center order-md-2">
+            <img src="./img/daihyo2.webp" alt="講師写真" class="img-fluid rounded shadow-sm">
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- 事業説明 -->
+    <section class="plan-setsumei py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- 入門編 -->
+          <div class="col-md-6">
+            <div class="course-card border-0 h-100 shadow-sm position-relative course-mid">
+              <!-- 円形バッジ -->
+              <!-- <span class="badge-round">受講目安<br><strong>2ヶ月</strong></span> -->
+              <div class="card-header text-center fw-bold fs-4 text-white bg-mid">入門編</div>
+              <div class="card-body p-5">
+                <!-- 対象 -->
+                <h6 class="title">対象</h6>
+                <ul class="mb-4">
+                  <li>経営者</li>
+                  <li>笑顔リーダー</li>
+                  <li>全スタッフ</li>
+                </ul>
+                <!-- 内容 -->
+                <h6 class="title">内容</h6>
+                <ul class="mb-4">
+                  <li>わりばしストレッチ</li>
+                  <li>スマイル握手</li>
+                  <li>ハッピー体操</li>
+                  <li>笑顔の力(日本人は笑顔が苦手)</li>
+                  <li>笑顔は技術</li>
+                  <li>外面で損しない方法、笑顔づくりの６箇条</li>アイコンタクト、割り箸ストレッチ、ハッピー体操、笑顔呼吸、笑顔のキャッチボール</ul>
+                <!-- 説明 -->
+                <h6 class="title">効果</h6>
+                <ul class="check-list">
+                  <li>人間関係</li>
+                  <li>健康づくり</li>
+                  <li>商売繁盛</li>
+                </ul>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.course-card -->
+          </div>
+          <!-- /.col -->
+          <!-- 実践編 -->
+          <div class="col-md-6">
+            <div class="course-card border-0 h-100 shadow-sm position-relative course-adv">
+              <!-- 円形バッジ -->
+              <!-- <span class="badge-round">受講目安<br><strong>2ヶ月</strong></span> -->
+              <div class="card-header text-center fw-bold fs-4 text-white bg-adv">実践編</div>
+              <div class="card-body p-5">
+                <!-- 対象 -->
+                <h6 class="title">対象</h6>
+                <ul class="mb-4">
+                  <li>「ハッピー笑顔塾入門編」を体験した方が対象</li>
+                </ul>
+                <!-- 内容 -->
+                <h6 class="title">内容</h6>
+                <ul class="mb-4">
+                  <span>お客様の企業に訪問授業</span>
+                  <li>笑顔なき企業は滅びる、AI時代は笑顔がオアシス</li>
+                  <li>笑顔の仕組み化</li>
+                  <li>環境ベーシック・アイコンタクト・笑顔づくり・笑顔のシナリオ化・フォーメーション・効率</li>
+                  <li>門川式自然な笑顔の作り方、笑顔レッスン</li>
+                </ul>
+                <!-- 目指せる姿 -->
+                <h6 class="title">効果</h6>
+                <ul class="check-list">
+                  <li>笑顔のサービス風土作り</li>
+                  <li>CS度(顧客満足度)の向上</li>
+                </ul>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.course-card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- セミナー詳細 -->
+    <section class="price-section py-5">
+      <div class="container syousai">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <!-- 見出し -->
+                <h2 class="card-title text-center fw-bold mb-4">
+                  <i class="fa-solid fa-circle-info text-kadokawa me-2"></i>ハッピー笑顔塾詳細</h2>
+                <!-- 会費 -->
+                <p class="display-6 text-center text-danger fw-bold mb-4">会費
+                  <span class="h2 fw-normal">11,000円</span>
+                  <small class="text-muted">（税込）</small>
+                </p>
+                <!-- 詳細リスト -->
+                <ul class="list-unstyled fs-5">
+                  <li class="mb-2">
+                    <i class="fa-regular fa-calendar-check text-kadokawa me-2"></i>開催日：
+                    <strong>月2日開催(8日〜25日)</strong>
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa-solid fa-location-dot text-kadokawa me-2"></i>場所：株式会社笑顔アメニティ研究所
+                    <br class="d-md-none">〒111-0034 東京都台東区雷門1-14-7-1101</li>
+                  <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps?q=35.71101,139.793781&hl=ja&z=18&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                  </div>
+                  <li class="mb-2">
+                    <i class="fa-solid fa-chalkboard-user text-kadokawa me-2"></i>内容：入門編2時間
+                    <span class="text-muted">(10:00-12:00)</span>、ランチ・シェア会2時間
+                    <br>・浅草幸せパワースポット巡り(任意参加) 2時間・著者サイン入り本プレゼント・懇親会(別途食事料金いただきます)</li>
+                  <li>
+                    <i class="fa-solid fa-users text-kadokawa me-2"></i>参加人数：
+                    <strong>3名（少人数制）</strong>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">お問い合わせ</h2>
+        <div class="row">
+          <!-- フォーム -->
+          <!-- <div class="col-lg-6 mb-4"> -->
+          <form class="contact-form" action="https://formspree.io/f/xeogqgry" method="POST">
+            <!-- 会社名 -->
+            <div class="mb-3">
+              <label for="company" class="form-label fw-bold fs-6 text-dark">会社名
+                <span class="tag">必須</span>
+              </label>
+              <input id="company" name="company" type="text" class="form-control" placeholder="会社名" required>
+            </div>
+            <!-- 氏名 -->
+            <div class="mb-3">
+              <label for="name" class="form-label fw-bold fs-6 text-dark">氏名
+                <span class="tag">必須</span>
+              </label>
+              <input id="name" name="name" type="text" class="form-control" placeholder="氏名" required>
+            </div>
+            <!-- 氏名(カナ) -->
+            <div class="mb-3">
+              <label for="nameKana" class="form-label fw-bold fs-6 text-dark">氏名(カナ)
+                <span class="tag">必須</span>
+              </label>
+              <input id="nameKana" name="name_kana" type="text" class="form-control" placeholder="氏名(カナ)" required>
+            </div>
+            <!-- メールアドレス -->
+            <div class="mb-3">
+              <label for="email" class="form-label fw-bold fs-6 text-dark">メールアドレス
+                <span class="tag">必須</span>
+              </label>
+              <input id="email" name="email" type="email" class="form-control" placeholder="メールアドレス" required>
+            </div>
+            <!-- 電話番号 -->
+            <div class="mb-3">
+              <label for="phone" class="form-label fw-bold fs-6 text-dark">電話番号 ※ハイフンを除く
+                <span class="tag">必須</span>
+              </label>
+              <input id="phone" name="phone" type="tel" class="form-control" placeholder="電話番号" required>
+            </div>
+            <!-- 件名 -->
+            <div class="mb-3">
+              <label for="subject" class="form-label fw-bold fs-6 text-dark">件名</label>
+              <input id="subject" name="_subject" type="text" class="form-control" placeholder="件名" required>
+            </div>
+            <!-- ご連絡方法 -->
+            <div class="mb-3">
+              <span class="d-block fw-bold fs-6 text-dark mb-1">ご連絡方法
+                <span class="tag">必須</span>
+              </span>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="cmail" name="contact_method" value="メール" checked>
+                <label class="form-check-label" for="cmail">メール</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="cphone" name="contact_method" value="電話">
+                <label class="form-check-label" for="cphone">電話</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="ceither" name="contact_method" value="どちらでも">
+                <label class="form-check-label" for="ceither">どちらでも</label>
+              </div>
+            </div>
+            <!-- お問い合わせ内容 -->
+            <div class="mb-3">
+              <label for="message" class="form-label fw-bold fs-6 text-dark">お問い合わせ内容
+                <span class="tag">必須</span>
+              </label>
+              <textarea id="message" name="message" class="form-control" rows="5" placeholder="お問い合わせの内容" required>
+              </textarea>
+            </div>
+            <!-- サンクスページへ遷移したい場合（任意） -->
+            <!-- <input type="hidden" name="_next" value="/thanks.html"> -->
+            <button type="submit" class="submit-button btn btn-primary">送信する</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="m-5">
+    <div class="page7">
+      <h3 class="telcon">お電話でのお問い合わせはこちら</h3>
+      <p class="tel-number">03-3843-4566</p>
+      <p>(平日 10:00-17:00)</p>
+    </div>
+  </div>
+  <section>
+    <div class="container py-5">
+      <!-- 横並びさせる行。g-4 でカード間 1.5rem の余白 -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+        <!-- ===== どんどん儲かる ===== -->
+        <div class="col">
+          <div class="card h-100 shadow-sm book-card">
+            <a href="https://www.amazon.co.jp/%E3%81%A9%E3%82%93%E3%81%A9%E3%82%93%E5%84%B2%E3%81%8B%E3%82%8B%E3%80%8C%E7%AC%91%E9%A1%94%E3%80%8D%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF-%E9%96%80%E5%B7%9D-%E7%BE%A9%E5%BD%A6/dp/4478013411/ref=sr_1_1?ie=UTF8&qid=1289477071&sr=8-1">
+              <img src="img/dondon.webp" class="card-img-top" alt="表紙1">
+              <div class="card-body">
+                <p class="card-text small">儲かるから笑顔になる?いや、笑顔だから儲かるんです!防犯カメラより笑顔が効く!笑顔で売上げ250%アップ！30年にわたる笑顔指導で実証された、笑顔のチカラと技術を伝えます。</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- ===== 作る ===== -->
+        <div class="col">
+          <div class="card h-100 shadow-sm book-card">
+            <a href="https://www.amazon.co.jp/gp/product/4569701051/ref=pe_2102_8996602_pe_snp_051">
+              <img src="img/tukuru.webp" class="card-img-top" alt="表紙2">
+              <div class="card-body">
+                <p class="card-text small">自分の笑顔に自信がありますか?自然な笑顔ができれば、周りの人とのコミュニケーションが魔法のようにうまくいきます。そして、人やお金、そして運が引き付けられるのです。</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- ===== 頭 ===== -->
+        <div class="col">
+          <div class="card h-100 shadow-sm book-card">
+            <a href="https://www.amazon.co.jp/gp/product/447873335X/sr=11-1/qid=1162801496/ref=sr_11_1/503-4205780-5285520">
+              <img src="img/atama.webp" class="card-img-top" alt="表紙3">
+              <div class="card-body">
+                <p class="card-text small">笑顔のチカラは絶大です。でも笑顔の使い方を間違えると人を傷つけたり、自分の心を隠す最大の武器にもなるんです。この本に書かれた使用上の注意をよく読んでお使い下さい。</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- ===== 法則 ===== -->
+        <div class="col">
+          <div class="card h-100 shadow-sm book-card">
+            <a href="https://www.amazon.co.jp/%E5%A3%B2%E4%B8%8A%E3%81%92%E3%81%8C%E3%81%90%E3%82%93%E3%81%90%E3%82%93%E4%BC%B8%E3%81%B3%E3%82%8B%E3%80%8C%E7%AC%91%E9%A1%94%E3%80%8D%E3%81%AE%E6%B3%95%E5%89%87-%E3%80%8C%E7%AC%91%E9%A1%94%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB%E3%82%BF%E3%83%B3%E3%83%88%E3%80%8D%E3%81%8C%E6%95%99%E3%81%88%E3%82%8B%E5%84%B2%E3%81%8B%E3%82%8B%E3%81%8A%E5%BA%97%E3%81%AE%E7%A7%98%E5%AF%86-%E9%96%80%E5%B7%9D-%E7%BE%A9%E5%BD%A6/dp/4478560501/ref=pd_sim_b_3">
+              <img src="img/housoku.webp" class="card-img-top" alt="表紙4">
+              <div class="card-body">
+                <p class="card-text small">あなただけに教える笑顔マジックの秘密とは!? ◉半年で売上が2.5倍! ◉購入単価が大幅アップ! ◉クレームが３分の１に減少! ◉万引きが激減! ◉入店客数が２倍に! その秘密とは？</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- ===== 力 ===== -->
+        <div class="col">
+          <div class="card h-100 shadow-sm book-card">
+            <a href="https://www.amazon.co.jp/%E7%AC%91%E9%A1%94%E3%81%AE%E3%83%81%E3%82%AB%E3%83%A9-%E9%96%80%E5%B7%9D-%E7%BE%A9%E5%BD%A6/dp/4877311521/ref=sr_1_6?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=Y39IZ0Z7LCB8&dib=eyJ2IjoiMSJ9.CJv-cc0HLDUEBbeKJyCJxFPvqH2vr7cPxexDS146cNMhq_yu0_hcLk4UN_WHQIiVXLgVXN3nVX4m48b_T_GlUK5NupQtP0p45C9lYNgXNvqKehHzVqDDn3A40p9xQTFiUXSwmQWVabb_Ovix9ZHqYADBTNUYjgr9HpB9McKUQ7o.wko05u4AHc6DdPYx5GdRrt68fWUbKwRx3wdFXEzdgjE&dib_tag=se&keywords=%E9%96%80%E5%B7%9D%E7%BE%A9%E5%BD%A6&qid=1746709993&sprefix=%E9%96%80%E5%B7%9D%E7%BE%A9%E5%BD%A6%2Caps%2C203&sr=8-6">
+              <img src="img/chikara.webp" class="card-img-top" alt="表紙4">
+              <div class="card-body">
+                <p class="card-text small">TVマスコミも注目！ 人生をハッピーにする笑顔セラピーのすすめ。 あなたの知らない笑顔パワーの秘密！◉家族、仕事、恋愛、友だち、笑顔はあらゆる人間関係の万能薬</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- ===== 呼吸 ===== -->
+        <div class="col">
+          <div class="card h-100 shadow-sm book-card">
+            <a href="https://www.amazon.co.jp/%E8%A1%A8%E6%83%85%E3%81%A7%E4%BD%93%E3%81%8C%E5%A4%89%E3%82%8F%E3%82%8B-%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E7%AC%91%E9%A1%94%E5%91%BC%E5%90%B8-%E9%96%80%E5%B7%9D-%E7%BE%A9%E5%BD%A6/dp/4862806902">
+              <img src="img/kokyu.jpg" class="card-img-top" alt="表紙5">
+              <div class="card-body">
+                <p class="card-text small">「笑顔」は、人とのコミュニケーションにとても重要。そして、健康にも影響を与えます!笑顔になる=口角を上げる、と鼻が開く。鼻が開くと新鮮な空気を鼻呼吸で体に取り込めます。</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- ここを埋めたら勝ち -->
   <!-- フッター -->
-   <style>
-    footer div p {
-        color: #fff;
-        text-decoration: none;
-    }
-   </style>
-
-  <footer class="py-4 text-white" style="background: linear-gradient(90deg,#F58529 0%,#DD2A7B 45%,#8134AF 100%);
-">
+  <footer class="py-4 text-white">
     <div class="container text-center">
-      <img src="./img/egao.jpg" alt="企業ロゴ" style="height: 100px; width: 250px; margin-bottom: 20px;">
-      <p>&copy; 2025 株式会社 笑顔アメニティ研究所 All Rights Reserved.</p>
+      <img class="footer-logo" src="./img/egao.jpg" alt="企業ロゴ">
+      <p>© 2025 株式会社 笑顔アメニティ研究所 All Rights Reserved.</p>
       <div class="social-links mt-3">
-        <a href="https://x.com/kadokawa2525?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1902168158875832766%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=file%3A%2F%2F%2FUsers%2Fruu%2FWORKS%2Fkadokawa-hp%2Findex.htmlcontact" class="mx-2"><i class="bi bi-twitter"></i></a>
-        <a href="https://www.facebook.com/kadokawa" class="mx-2"><i class="bi bi-facebook"></i></a>
+        <a href="https://x.com/kadokawa2525?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1902168158875832766%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=file%3A%2F%2F%2FUsers%2Fruu%2FWORKS%2Fkadokawa-hp%2Findex.htmlcontact" class="mx-2">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/kadokawa" class="mx-2">
+          <i class="bi bi-facebook"></i>
+        </a>
       </div>
     </div>
   </footer>
-
   <!-- Facebook SDK -->
-  <div id="fb-root"></div>
+  <div id="fb-root">
+  </div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v18.0" nonce="random_nonce"></script>
-  
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
