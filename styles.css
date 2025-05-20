@@ -707,3 +707,28 @@ ul { padding-left: 1.25rem; }
   .navbar-nav .nav-link.active {
     color: white !important;
   }
+
+
+  /* about.html */
+  /* about.html */
+  /* about.html */
+  /* about.html 賞状一覧 */
+  .image-row {
+    display: flex;      /* 横並び */
+    gap: 1rem;          /* 画像間のすき間 */
+  }
+
+  .image-row img {
+    width: 300px;       /* そろえる幅 */
+    height: 250px;      /* そろえる高さ */
+    object-fit: cover;  /* はみ出す部分を中央トリミング */
+    flex-shrink: 0;     /* 画像がつぶれないよう固定 */
+  }
+
+  /* 画面が狭いときは自動折り返し */
+  @media (max-width: 640px) {
+    .image-row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }

@@ -294,29 +294,7 @@
         <p class="text-muted mt-3">その他 多数。
           <br>※順不同、敬称略</p>
       </div>
-      <!-- 賞状カルーセル -->
-      <style>
-        /* ===== 画像横並びレイアウト ===== */
-        .image-row {
-          display: flex;      /* 横並び */
-          gap: 1rem;          /* 画像間のすき間 */
-        }
-      
-        .image-row img {
-          width: 300px;       /* そろえる幅 */
-          height: 200px;      /* そろえる高さ */
-          object-fit: cover;  /* はみ出す部分を中央トリミング */
-          flex-shrink: 0;     /* 画像がつぶれないよう固定 */
-        }
-      
-        /* 画面が狭いときは自動折り返し */
-        @media (max-width: 640px) {
-          .image-row {
-            flex-wrap: wrap;
-            justify-content: center;
-          }
-        }
-      </style>
+      <!-- 賞状一覧 -->
       <div class="image-row">
           <img src="./img/kansya.jpg" alt="画像1">
           <img src="./img/nihon.jpg" alt="画像2">
