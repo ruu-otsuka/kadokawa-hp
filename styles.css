@@ -267,7 +267,7 @@ div.page7 p.tel-number {
   background-color: white;
   padding: 25px;
   border-radius: 5px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
 }
 
 .profile-content h3 {
@@ -692,4 +692,8 @@ ul { padding-left: 1.25rem; }
 
   th {
     color: var(--accent-color);
+  }
+
+  .navbar-nav .nav-link.active {
+    color: white !important;
   }
