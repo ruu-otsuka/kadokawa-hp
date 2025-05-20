@@ -321,6 +321,10 @@ div.page7 p.tel-number {
   .timeline-item:before {
     left: -26px;
   }
+
+  .semminer-gaiyo {
+    padding-inline: 10px !important;
+  }
 }
 
 /* ---------- Navbar ----------------------------------------- */
@@ -617,6 +621,12 @@ ul { padding-left: 1.25rem; }
 
 .syousai {
   background-color: var(--base-color-shaded);
+}
+
+.semminer-gaiyo {
+  background-color: var(--main-color);
+  padding-inline: 100px;
+  padding-top: 50px;
 }
 
 /* ---------- Google Map：株式会社 笑顔アメニティ研究所 ------------------------------ */
