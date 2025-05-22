@@ -143,6 +143,10 @@ li {
   font-size: 1.2em;
 }
 
+#about-happy-egao strong {
+  color: var(--accent-color);
+}
+
 /* ---------- SNS埋め込みのスタイル ------------------------------ */
 /* ---------- SNS埋め込みのスタイル ------------------------------ */
 /* ---------- SNS埋め込みのスタイル ------------------------------ */
@@ -265,7 +269,7 @@ div.page7 p.tel-number {
 
 .profile-content {
   background-color: white;
-  padding: 25px;
+  padding: 0 25px 25px 25px;
   border-radius: 5px;
   /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
 }
@@ -517,15 +521,24 @@ div.page1-3 {
   background: #d19a61;
   -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-  width: 354.188px;
+  /* width: 354.188px; */
   height: 80px;
   margin-top: 30px;
+  background: #d19a61;
 }
+
+.cta, .cta:hover {
+  background-color: #d19a61;
+}
+
 a.btn-c {
-    font-size: 17px;
-    position: relative;
-    padding: 1.65rem 5.1rem 1.65rem 5.1rem;
-    color: #fff;
+  font-size: 22px;
+  border-radius: 70px;
+  background-color: #d19a61;
+  font-size: 17px;
+  position: relative;
+  padding: 1.65rem 5.1rem 1.65rem 5.1rem;
+  color: #fff;
 }
 
 /* ---------- 入門・実践カード ------------------------------ */
@@ -600,7 +613,7 @@ ul { padding-left: 1.25rem; }
 }
 
 /* ------- 間隔・背景 ------- */
-.plan-setsumei {
+#plan-setsumei {
   background: var(--base-color);
 }
 
@@ -732,3 +745,38 @@ ul { padding-left: 1.25rem; }
       justify-content: center;
     }
   }
+
+
+  /* concept */
+  /* concept */
+  /* concept */
+  .concept ul li {
+    list-style: none;
+  } 
+
+  .concept ul li strong, .concept strong{
+    font-size: 22px;
+    color: var(--accent-color);
+  }
+
+  /* kekka */
+  /* kekka */
+  /* kekka */
+  .kekka {
+    text-align: center;
+    background-color: var(--accent-color);
+  }
+
+
+  #plan-setsumei .h2-title {
+    color: white;
+    background-color: var(--main-color);
+  }
+
+  #plan-setsumei strong {
+    color: var(--accent-color);
+  }
+
+#semminer-gaiyo strong {
+  color: var(--accent-color);
+}
