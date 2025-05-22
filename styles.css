@@ -528,7 +528,7 @@ div.page1-3 {
 }
 
 .cta, .cta:hover {
-  background-color: #d19a61;
+  background-color: #d19a61 !important;
 }
 
 a.btn-c {
