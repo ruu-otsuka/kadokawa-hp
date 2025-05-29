@@ -532,13 +532,8 @@
                 <input class="form-check-input" type="radio" name="semminer-name" id="jissen" value="jissen">
                 <label class="form-check-label" for="banana">笑顔入門講座</label>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="semminer-name" id="otoiawase" value="otoiawase">
-                <label class="form-check-label" for="banana">お問合せ</label>
-              </div>
             </div>
-              
-          
+            
             <!-- 参加日 -->
             <div class="mb-3">
               <label for="attend_date" class="form-label fw-bold fs-6 text-dark">参加日
@@ -581,10 +576,80 @@
               </label>
               <input id="phone" name="phone" type="tel" class="form-control" placeholder="電話番号" required>
             </div>
-            <!-- 件名 -->
+            <!-- ご連絡方法 -->
             <div class="mb-3">
-              <label for="subject" class="form-label fw-bold fs-6 text-dark">件名</label>
-              <input id="subject" name="_subject" type="text" class="form-control" placeholder="件名" required>
+              <span class="d-block fw-bold fs-6 text-dark mb-1">ご連絡方法
+                <span class="tag">必須</span>
+              </span>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="cmail" name="contact_method" value="メール" checked>
+                <label class="form-check-label" for="cmail">メール</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="cphone" name="contact_method" value="電話">
+                <label class="form-check-label" for="cphone">電話</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="ceither" name="contact_method" value="どちらでも">
+                <label class="form-check-label" for="ceither">どちらでも</label>
+              </div>
+            </div>
+            <!-- お問い合わせ内容 -->
+            <div class="mb-3">
+              <label for="message" class="form-label fw-bold fs-6 text-dark">お問い合わせ内容
+                <span class="tag">必須</span>
+              </label>
+              <textarea id="message" name="message" class="form-control" rows="5" placeholder="お問い合わせの内容" required>
+              </textarea>
+            </div>
+            <!-- サンクスページへ遷移したい場合（任意） -->
+            <!-- <input type="hidden" name="_next" value="/thanks.html"> -->
+            <button type="submit" class="submit-button btn btn-primary">送信する</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">お申し込みフォーム</h2>
+        <div class="row">
+          <!-- フォーム -->
+          <form class="contact-form" action="https://formspree.io/f/mvgaeybn" method="POST">    
+            <!-- 会社名 -->
+            <div class="mb-3">
+              <label for="company" class="form-label fw-bold fs-6 text-dark">会社名
+                <span class="tag">必須</span>
+              </label>
+              <input id="company" name="company" type="text" class="form-control" placeholder="会社名" required>
+            </div>
+            <!-- 氏名 -->
+            <div class="mb-3">
+              <label for="name" class="form-label fw-bold fs-6 text-dark">氏名
+                <span class="tag">必須</span>
+              </label>
+              <input id="name" name="name" type="text" class="form-control" placeholder="氏名" required>
+            </div>
+            <!-- 氏名(カナ) -->
+            <div class="mb-3">
+              <label for="nameKana" class="form-label fw-bold fs-6 text-dark">氏名(カナ)
+                <span class="tag">必須</span>
+              </label>
+              <input id="nameKana" name="name_kana" type="text" class="form-control" placeholder="氏名(カナ)" required>
+            </div>
+            <!-- メールアドレス -->
+            <div class="mb-3">
+              <label for="email" class="form-label fw-bold fs-6 text-dark">メールアドレス
+                <span class="tag">必須</span>
+              </label>
+              <input id="email" name="email" type="email" class="form-control" placeholder="メールアドレス" required>
+            </div>
+            <!-- 電話番号 -->
+            <div class="mb-3">
+              <label for="phone" class="form-label fw-bold fs-6 text-dark">電話番号 ※ハイフンを除く
+                <span class="tag">必須</span>
+              </label>
+              <input id="phone" name="phone" type="tel" class="form-control" placeholder="電話番号" required>
             </div>
             <!-- ご連絡方法 -->
             <div class="mb-3">
