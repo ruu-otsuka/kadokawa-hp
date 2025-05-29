@@ -335,31 +335,38 @@
             </div>
           </div>
         </div>
-        <!-- facebook -->
-         <!-- ===== Facebook SDK（ページ内で 1 回だけ）===== -->
+
+        <!-- facebook埋め込み -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
           <div id="fb-root"></div>
           <script async defer crossorigin="anonymous"
                   src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v19.0"></script>
+            <div class="card h-100">
+                <div class="card-header">
+                  <h5>
+                    <i class="bi bi-facebook text-info"></i>Facebook</h5>
+                </div>
+                <div class="card-body">
+                  <div class="fb-page"
+                data-href="https://www.facebook.com/100041438419301"
+                data-tabs="timeline"
+                data-width="500"
+                data-height="800"
+                data-adapt-container-width="true"></div>
 
-          <!-- ===== ページのタイムライン一覧（最新を含む）===== -->
-          <div class="fb-page"
-              data-href="https://www.facebook.com/100041438419301"
-              data-tabs="timeline"
-              data-width=""
-              data-height="600"
-              data-adapt-container-width="true"
-              data-hide-cover="false"
-              data-show-facepile="true"></div>
+                <!-- 常に最新 1 投稿 -->
+                <h2>常に最新 1 投稿</h2>
+                <div id="latest" class="fb-post" data-width=""></div>
 
-          <!-- ===== 最新投稿 1 件を大きく表示（手動差し替え版）===== -->
-          <div class="fb-post"
-              data-href="https://www.facebook.com/permalink.php?story_fbid=POST_ID&id=100041438419301"
-              data-width=""></div>
-
-            
+                <!-- 自作スクリプトを最後に読み込む -->
+                <script src="js/fb-latest.js"></script>
+              </div>
+          </div>
         </div>
-       </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
     <!-- メディア出演 -->
 <section>
