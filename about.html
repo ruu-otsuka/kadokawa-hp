@@ -307,65 +307,6 @@
     </div>
   </section>
 
-    <!-- ===== セミナー概要セクション ===== -->
-    <section style="background-color: var(--main-color);">
-      <div class="px-5">
-
-        <!-- 見出し -->
-        <h1 class="text-center text-white fw-bold mb-4">笑顔入門講座 ~笑顔いい顔一番店~</h1>
-
-        <!-- 白いカードで内容をくるむ -->
-        <div class="card shadow-lg border-0">
-          <div class="card-body p-4">
-
-            <table class="table table-bordered align-middle mb-0">
-              <tbody>
-                <tr>
-                  <th class="w-25">日程</th>
-                  <td class="fs-5">
-                    未定
-                  </td>
-                </tr>
-                <tr>
-                  <th class="">内容</th>
-                  <td>
-                    台東区民会館 東京都台東区花川戸２丁目６番５号</br> TEL 03-3843-5391（台東区民会館）
-                  </td>
-                </tr>
-                <tr>
-                  <th class="">開催形態</th>
-                  <td>
-                    現地集合<br>
-                    (会場: 台東区民会館 東京都台東区花川戸２丁目６番５号 <a href="https://www.google.co.jp/maps/place/%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%B0%91%E4%BC%9A%E9%A4%A8/@35.7143596,139.7985036,15z/data=!4m5!3m4!1s0x0:0x728897f2787a0f37!8m2!3d35.7143596!4d139.7985036">地図</a>)
-                  </td>
-                </tr>
-                <tr>
-                  <th class="">募集人数</th>
-                  <td>
-                    20名
-                  </td>
-                </tr>
-                <tr>
-                  <th class="">持ち物</th>
-                  <td>
-                    割り箸、鏡
-                  </td>
-                </tr>
-                <tr>
-                  <th class="">受講料</th>
-                  <td>
-                    5,500円(税込)
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-          </div><!-- /.card-body -->
-        </div><!-- /.card -->
-
-      </div><!-- /.container -->
-    </section>
-
     </div>
   </section>
   <section id="blog" class="py-5 ">
@@ -395,28 +336,30 @@
           </div>
         </div>
         <!-- facebook -->
-        <div class="col-md-6 mb-4">
-          <div class="card h-100">
-            <div class="card-header">
-              <h5><i class="bi bi-facebook text-info"></i> Facebook</h5>
-            </div>
-            <div class="card-body">
-              <div class="fb-page"
-                data-href="https://www.facebook.com/100041438419301"
-                data-tabs="timeline"
-                data-width="100%"
-                data-height="600"
-                data-small-header="false"
-                data-adapt-container-width="true"
-                data-hide-cover="false"
-                data-show-facepile="true">
-              </div>
-            </div>
-          </div>
+         <!-- ===== Facebook SDK（ページ内で 1 回だけ）===== -->
+          <div id="fb-root"></div>
+          <script async defer crossorigin="anonymous"
+                  src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v19.0"></script>
+
+          <!-- ===== ページのタイムライン一覧（最新を含む）===== -->
+          <div class="fb-page"
+              data-href="https://www.facebook.com/100041438419301"
+              data-tabs="timeline"
+              data-width=""
+              data-height="600"
+              data-adapt-container-width="true"
+              data-hide-cover="false"
+              data-show-facepile="true"></div>
+
+          <!-- ===== 最新投稿 1 件を大きく表示（手動差し替え版）===== -->
+          <div class="fb-post"
+              data-href="https://www.facebook.com/permalink.php?story_fbid=POST_ID&id=100041438419301"
+              data-width=""></div>
+
+            
         </div>
-      </div>
-    </div>
-  </section>
+       </div>
+      </section>
 
     <!-- メディア出演 -->
 <section>

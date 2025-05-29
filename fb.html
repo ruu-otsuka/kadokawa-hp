@@ -1,39 +1,81 @@
+<!-- ======= そのままコピペで動く最新版 ======= -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>FB 埋め込みテスト</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<meta charset="utf-8" />
+<title>Facebook 最新投稿ウィジェット</title>
+<style>
+  body{font-family:system-ui,sans-serif;max-width:700px;margin:2rem auto;padding:0 1rem;}
+  h2{margin:1.5rem 0 .5rem;}
+</style>
 </head>
 <body>
 
-<div class="container my-5">
-  <div class="card">
-    <div class="card-header">
-      <h5><i class="bi bi-facebook text-info"></i> Facebook</h5>
-    </div>
-    <div class="card-body">
-      <!-- ★ ページ全体を表示したい場合 -->
-      <div class="fb-page"
-           data-href="https://www.facebook.com/profile.php?id=100041438419301"
-           data-tabs="timeline"
-           data-width="100%"
-           data-height="600"
-           data-adapt-container-width="true"></div>
-    </div>
-  </div>
-</div>
-
-<!-- SDK -->
+<!-- ========== Facebook SDK（ページ内 1 回だけ）========== -->
 <div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v19.0"></script>
+
+<!-- SDK が読み込み完了した瞬間に 1 度だけパースするフック -->
 <script>
-  // 非同期ロード終了後に呼ばれる
   window.fbAsyncInit = function () {
-    // 追加設定が必要ならここで FB.init()
-    console.log('Facebook SDK ready');
+    const box = document.getElementById('latest');
+    if (box && box.getAttribute('data-href')) {
+      FB.XFBML.parse(box);
+    }
   };
 </script>
-<script async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v18.0"></script>
+
+<!-- ========== タイムライン一覧（自動で最新を含む）========== -->
+<h2>ページのタイムライン</h2>
+<div class="fb-page"
+     data-href="https://www.facebook.com/61576559173083"   
+     data-tabs="timeline"
+     data-width=""
+     data-height="600"
+     data-adapt-container-width="true"></div>
+
+<!-- ========== 常に最新 1 投稿を自動表示 ========== -->
+<h2>常に最新 1 投稿</h2>
+<div id="latest" class="fb-post" data-width=""></div>
+
+<script>
+/* ======= ここ２行だけ自分の値に書き換える ======= */
+const PAGE_ID = '61576559173083';                             // ←ページ ID
+const TOKEN =
+  'EAAJ6fMeS5jIBO75laYZBdMs4DYbMDcMAJqAVChsSxz5M71M6EZBNdnT74HMwziZBMhZBsOBCuZAtFbBRgz43GcsYZCRxuKZB4EcMOvB6w6ctwbsFMZCjyw1MqiFlqFhijGofGZBje8ZCeiyMEBYtuEJnO2pvNYVlEqtvu1UZAOzDcFRzPiPsdjDTOujL2bykx2cBXkhCZCZChRfEajZB17cleJzIxAaT36ZASJEz2Oa4BsZD';
+/* ================================================= */
+
+let latestHref = '';   // 直近の data-href を保持
+
+async function refreshLatest() {
+  try {
+    const endpoint =
+      `https://graph.facebook.com/v19.0/${PAGE_ID}/posts` +
+      `?fields=permalink_url&limit=1&access_token=${TOKEN}`;
+
+    const json = await fetch(endpoint).then(r => r.json());
+    const permalink = json.data?.[0]?.permalink_url;
+    if (!permalink) return;                  // 取得失敗時は何もしない
+
+    const box = document.getElementById('latest');
+
+    // 新しい投稿が来たときだけ書き換え
+    if (permalink !== latestHref) {
+      latestHref = permalink;
+      box.setAttribute('data-href', permalink);
+    }
+
+    // SDK が読み込み済みなら必ずパース
+    if (window.FB) FB.XFBML.parse(box);
+  } catch (e) {
+    console.error('Graph API 取得失敗', e);
+  }
+}
+
+refreshLatest();                      // ページ表示直後に 1 回
+setInterval(refreshLatest, 300000);   // 5 分ごとに更新（数字は自由に変更可）
+</script>
+
 </body>
 </html>
